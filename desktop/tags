@@ -1,0 +1,721 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+AddClampOverflow	MathMisc.h	/^inline bool AddClampOverflow( int& sum, int addend ) $/;"	f
+AddClampOverflow	MathMisc.h	/^inline bool AddClampOverflow( long& sum, long addend ) $/;"	f
+AddCrossProduct	LinearR3.h	/^inline VectorR3& VectorR3::AddCrossProduct( const VectorR3& u, const VectorR3& v )$/;"	f	class:VectorR3
+AddScaled	LinearR3.h	/^inline VectorR3& VectorR3::AddScaled( const VectorR3& u, double s ) $/;"	f	class:VectorR3
+AddScaled	LinearR4.h	/^inline VectorR4& VectorR4::AddScaled( const VectorR4& u, double s ) $/;"	f	class:VectorR4
+AffineMapR3	LinearR3.h	/^class AffineMapR3 : public Matrix3x4 {$/;"	c
+AffineMapR3	LinearR3.h	/^inline AffineMapR3::AffineMapR3 (const LinearMapR3& A, const VectorR3& t)$/;"	f	class:AffineMapR3
+AffineMapR3	LinearR3.h	/^inline AffineMapR3::AffineMapR3 (const VectorR3& u, const VectorR3& v, $/;"	f	class:AffineMapR3
+AffineMapR3	LinearR3.h	/^inline AffineMapR3::AffineMapR3( double a11, double a21, double a31, $/;"	f	class:AffineMapR3
+AffineTransformDirection	LinearR4.cpp	/^void LinearMapR4::AffineTransformDirection(VectorR3& dest) const$/;"	f	class:LinearMapR4
+AffineTransformPosition	LinearR4.cpp	/^void LinearMapR4::AffineTransformPosition(VectorR3& dest) const$/;"	f	class:LinearMapR4
+AllocateShdrInfo	GlShaderMgr.cpp	/^bool GlShaderMgr::AllocateShdrInfo(std::string& shaderType, std::string& shaderCodeName)$/;"	f	class:GlShaderMgr
+ApplyTranslationLeft	LinearR3.h	/^	AffineMapR3& ApplyTranslationLeft( const VectorR3& u ) $/;"	f	class:AffineMapR3
+ApplyTranslationLeft	LinearR3.h	/^	RigidMapR3& ApplyTranslationLeft( const VectorR3& u ) $/;"	f	class:RigidMapR3
+ApplyTranslationLeft	LinearR3.h	/^inline Matrix3x4& Matrix3x4::ApplyTranslationLeft( const VectorR3& u )$/;"	f	class:Matrix3x4
+ApplyTranslationRight	LinearR3.h	/^	AffineMapR3& ApplyTranslationRight( const VectorR3& u )$/;"	f	class:AffineMapR3
+ApplyTranslationRight	LinearR3.h	/^	RigidMapR3& ApplyTranslationRight( const VectorR3& u )$/;"	f	class:RigidMapR3
+ApplyTranslationRight	LinearR3.h	/^inline Matrix3x4& Matrix3x4::ApplyTranslationRight( const VectorR3& u )$/;"	f	class:Matrix3x4
+ApplyXRotationLeft	LinearR3.h	/^	AffineMapR3& ApplyXRotationLeft( double costheta, double sintheta ) $/;"	f	class:AffineMapR3
+ApplyXRotationLeft	LinearR3.h	/^	AffineMapR3& ApplyXRotationLeft( double theta ) $/;"	f	class:AffineMapR3
+ApplyXRotationLeft	LinearR3.h	/^	RigidMapR3& ApplyXRotationLeft( double costheta, double sintheta ) $/;"	f	class:RigidMapR3
+ApplyXRotationLeft	LinearR3.h	/^	RigidMapR3& ApplyXRotationLeft( double theta ) $/;"	f	class:RigidMapR3
+ApplyXRotationLeft	LinearR3.h	/^inline Matrix3x4& Matrix3x4::ApplyXRotationLeft( double costheta, double sintheta ) $/;"	f	class:Matrix3x4
+ApplyXRotationLeft	LinearR3.h	/^inline Matrix3x4& Matrix3x4::ApplyXRotationLeft( double theta ) $/;"	f	class:Matrix3x4
+ApplyYRotationLeft	LinearR3.h	/^	AffineMapR3& ApplyYRotationLeft( double costheta, double sintheta ) $/;"	f	class:AffineMapR3
+ApplyYRotationLeft	LinearR3.h	/^	AffineMapR3& ApplyYRotationLeft( double theta ) $/;"	f	class:AffineMapR3
+ApplyYRotationLeft	LinearR3.h	/^	RigidMapR3& ApplyYRotationLeft( double costheta, double sintheta ) $/;"	f	class:RigidMapR3
+ApplyYRotationLeft	LinearR3.h	/^	RigidMapR3& ApplyYRotationLeft( double theta ) $/;"	f	class:RigidMapR3
+ApplyYRotationLeft	LinearR3.h	/^inline Matrix3x4& Matrix3x4::ApplyYRotationLeft( double costheta, double sintheta ) $/;"	f	class:Matrix3x4
+ApplyYRotationLeft	LinearR3.h	/^inline Matrix3x4& Matrix3x4::ApplyYRotationLeft( double theta ) $/;"	f	class:Matrix3x4
+ApplyZRotationLeft	LinearR3.h	/^inline Matrix3x4& Matrix3x4::ApplyZRotationLeft( double costheta, double sintheta ) $/;"	f	class:Matrix3x4
+ApplyZRotationLeft	LinearR3.h	/^inline Matrix3x4& Matrix3x4::ApplyZRotationLeft(double theta)$/;"	f	class:Matrix3x4
+ArrayProd	LinearR3.h	/^inline VectorR3 ArrayProd ( const VectorR3& u, const VectorR3& v )$/;"	f
+ArrayProd	LinearR3.h	/^inline VectorR3& VectorR3::ArrayProd (const VectorR3& v)		\/\/ Component-wise Product$/;"	f	class:VectorR3
+ArrayProd	LinearR4.h	/^inline VectorR4 ArrayProd ( const VectorR4& u, const VectorR4& v )$/;"	f
+ArrayProd	LinearR4.h	/^inline VectorR4& VectorR4::ArrayProd (const VectorR4& v)		\/\/ Component-wise Product$/;"	f	class:VectorR4
+ArrayProd3	LinearR4.h	/^inline VectorR4& VectorR4::ArrayProd3 (const VectorR3& v)		\/\/ Component-wise Product$/;"	f	class:VectorR4
+CalcGlideRotation	LinearR3.cpp	/^bool RigidMapR3::CalcGlideRotation( VectorR3* u, VectorR3* v, $/;"	f	class:RigidMapR3
+ClampMax	MathMisc.h	/^template<class T> inline bool ClampMax ( T *x, const T& max) $/;"	f
+ClampMin	MathMisc.h	/^template<class T> inline bool ClampMin ( T *x, const T& min) $/;"	f
+ClampRange	MathMisc.h	/^template<class T> inline T ClampRange ( const T& x, const T& min, const T& max) $/;"	f
+ClampRange	MathMisc.h	/^template<class T> inline bool ClampRange ( T *x, const T& min, const T& max) $/;"	f
+ClampRangeSafe	MathMisc.h	/^inline void ClampRangeSafe ( double* x, double min, double max) $/;"	f
+Column1	LinearR3.h	/^inline VectorR3 Matrix3x3::Column1() const$/;"	f	class:Matrix3x3
+Column1	LinearR3.h	/^inline VectorR3 Matrix3x4::Column1() const$/;"	f	class:Matrix3x4
+Column1	LinearR4.h	/^VectorR4 Matrix4x4::Column1() const$/;"	f	class:Matrix4x4
+Column2	LinearR3.h	/^inline VectorR3 Matrix3x3::Column2() const$/;"	f	class:Matrix3x3
+Column2	LinearR3.h	/^inline VectorR3 Matrix3x4::Column2() const$/;"	f	class:Matrix3x4
+Column2	LinearR4.h	/^VectorR4 Matrix4x4::Column2() const$/;"	f	class:Matrix4x4
+Column3	LinearR3.h	/^inline VectorR3 Matrix3x3::Column3() const$/;"	f	class:Matrix3x3
+Column3	LinearR3.h	/^inline VectorR3 Matrix3x4::Column3() const$/;"	f	class:Matrix3x4
+Column3	LinearR4.h	/^VectorR4 Matrix4x4::Column3() const$/;"	f	class:Matrix4x4
+Column4	LinearR3.h	/^inline VectorR3 Matrix3x4::Column4() const$/;"	f	class:Matrix3x4
+Column4	LinearR4.h	/^VectorR4 Matrix4x4::Column4() const$/;"	f	class:Matrix4x4
+CompileAndLinkAll	GlShaderMgr.cpp	/^unsigned int GlShaderMgr::CompileAndLinkAll()$/;"	f	class:GlShaderMgr
+CompileAndLinkProgram	GlShaderMgr.cpp	/^unsigned int GlShaderMgr::CompileAndLinkProgram(const char* shaderName1, const char* shaderName2)$/;"	f	class:GlShaderMgr
+CompileAndLinkProgram	GlShaderMgr.cpp	/^unsigned int GlShaderMgr::CompileAndLinkProgram(const char* shaderName1, const char* shaderName2, const char* shaderName3)$/;"	f	class:GlShaderMgr
+CompileShader	GlShaderMgr.cpp	/^unsigned int GlShaderMgr::CompileShader(const char* shaderCodeName)$/;"	f	class:GlShaderMgr
+CompileShader	GlShaderMgr.cpp	/^unsigned int GlShaderMgr::CompileShader(int numcodeBlocks, const char* shaderCodeNames[])$/;"	f	class:GlShaderMgr
+CrossProductLeft	LinearR3.h	/^inline VectorR3& VectorR3::CrossProductLeft (const VectorR3& v)$/;"	f	class:VectorR3
+Cube	MathMisc.h	/^template<class T> inline T Cube ( const T& x ) $/;"	f
+DBL_NAN	MathMisc.h	/^const double DBL_NAN = sqrt(-1.0);	\/\/ Kludgy - ought to be an IEEE standard for this constant$/;"	v
+DegreesToRadians	MathMisc.h	/^const double DegreesToRadians = PI\/180;$/;"	v
+Determinant	LinearR3.cpp	/^double LinearMapR3::Determinant () const		\/\/ Returns the determinant$/;"	f	class:LinearMapR3
+Determinant	LinearR4.cpp	/^double LinearMapR4::Determinant () const		\/\/ Returns the determinant$/;"	f	class:LinearMapR4
+Diagonal	LinearR3.h	/^inline double Matrix3x3::Diagonal( int i ) const $/;"	f	class:Matrix3x3
+Diagonal	LinearR4.h	/^inline double Matrix4x4::Diagonal( int i ) $/;"	f	class:Matrix4x4
+Dist	LinearR3.h	/^inline double Dist(const VectorR3& u, const VectorR3& v) { return u.Dist(v); }$/;"	f
+Dist	LinearR3.h	/^inline double VectorR3::Dist( const VectorR3& u ) const 	\/\/ Distance from u$/;"	f	class:VectorR3
+Dist	LinearR4.h	/^inline double Dist(const VectorR4& u, const VectorR4& v) { return u.Dist(v); }$/;"	f
+Dist	LinearR4.h	/^inline double VectorR4::Dist( const VectorR4& u ) const 	\/\/ Distance from u$/;"	f	class:VectorR4
+Dist	MathMisc.h	/^inline double Dist ( double x, double y ) {$/;"	f
+DistSq	LinearR3.h	/^inline double DistSq(const VectorR3& u, const VectorR3& v) { return u.DistSq(v); }$/;"	f
+DistSq	LinearR3.h	/^inline double VectorR3::DistSq( const VectorR3& u ) const	\/\/ Distance from u$/;"	f	class:VectorR3
+DistSq	LinearR4.h	/^inline double DistSq(const VectorR4& u, const VectorR4& v) { return u.DistSq(v); }$/;"	f
+DistSq	LinearR4.h	/^inline double VectorR4::DistSq( const VectorR4& u ) const	\/\/ Distance from u$/;"	f	class:VectorR4
+Dump	LinearR3.h	/^inline 	void VectorR3::Dump( double* v ) const$/;"	f	class:VectorR3
+Dump	LinearR3.h	/^inline 	void VectorR3::Dump( float* v ) const$/;"	f	class:VectorR3
+Dump	LinearR4.h	/^inline 	void VectorR4::Dump( double* v ) const$/;"	f	class:VectorR4
+Dump	LinearR4.h	/^inline 	void VectorR4::Dump( float* v ) const$/;"	f	class:VectorR4
+DumpByColumns	LinearR4.h	/^    inline float* DumpByColumns() const { return DumpByColumns(TempDumpData); }$/;"	f	class:Matrix4x4
+DumpByColumns	LinearR4.h	/^float* Matrix4x4::DumpByColumns(float* ret) const$/;"	f	class:Matrix4x4
+E	MathMisc.h	/^const double E = exp(1.0);$/;"	v
+EqualZeroFuzzy	MathMisc.h	/^inline bool EqualZeroFuzzy( double x ) {$/;"	f
+FifthPower	MathMisc.h	/^template<class T> inline T FifthPower( const T& x )$/;"	f
+FinalizeCompileAndLink	GlShaderMgr.cpp	/^void GlShaderMgr::FinalizeCompileAndLink()$/;"	f	class:GlShaderMgr
+FourthPower	MathMisc.h	/^template<class T> inline T FourthPower( const T& x )$/;"	f
+GLEW_STATIC	BufferInterface.cpp	/^#define GLEW_STATIC$/;"	d	file:
+GLEW_STATIC	GlGeomSphere.cpp	/^#define GLEW_STATIC$/;"	d	file:
+GLEW_STATIC	GlGeomSphere.h	/^#define GLEW_STATIC$/;"	d
+GLEW_STATIC	GlShaderMgr.cpp	/^#define GLEW_STATIC$/;"	d	file:
+GLEW_STATIC	GlShaderMgr.h	/^#define GLEW_STATIC$/;"	d
+GLEW_STATIC	GlslWaves.cpp	/^#define GLEW_STATIC$/;"	d	file:
+GLEW_STATIC	GlslWaves.h	/^#define GLEW_STATIC$/;"	d
+GLGEOM_SPHERE_H	GlGeomSphere.h	/^#define GLGEOM_SPHERE_H$/;"	d
+GL_SHADER_MGR_H	GlShaderMgr.h	/^#define GL_SHADER_MGR_H$/;"	d
+GetEBO	GlGeomSphere.h	/^    int GetEBO() const { return theEBO; }$/;"	f	class:GlGeomSphere
+GetNumElements	GlGeomSphere.h	/^    int GetNumElements() const { return numSlices*(2*numStacks+1); }$/;"	f	class:GlGeomSphere
+GetNumSlices	GlGeomSphere.h	/^    int GetNumSlices() const { return numSlices; }$/;"	f	class:GlGeomSphere
+GetNumStacks	GlGeomSphere.h	/^    int GetNumStacks() const { return numStacks; }$/;"	f	class:GlGeomSphere
+GetNumVertices	GlGeomSphere.h	/^    int GetNumVertices() const { return (numSlices+1)*(numStacks-1)+2; }$/;"	f	class:GlGeomSphere
+GetOrtho	LinearR3.cpp	/^void GetOrtho( const VectorR3& u,  VectorR3& v )$/;"	f
+GetOrtho	LinearR3.cpp	/^void GetOrtho( const VectorR3& u,  VectorR3& v, VectorR3& w)$/;"	f
+GetOrtho	LinearR4.cpp	/^void GetOrtho( const VectorR4& u,  RotationMapR4& rotmat )$/;"	f
+GetOrtho	LinearR4.cpp	/^void GetOrtho( const VectorR4& u,  const VectorR4& v, RotationMapR4& rotmat )$/;"	f
+GetOrtho	LinearR4.cpp	/^void GetOrtho( const VectorR4& u,  const VectorR4& v, const VectorR4& s,$/;"	f
+GetOrtho	LinearR4.cpp	/^void GetOrtho( int j, RotationMapR4& rotmat)$/;"	f
+GetVAO	GlGeomSphere.h	/^    int GetVAO() const { return theVAO; }$/;"	f	class:GlGeomSphere
+GetVBO	GlGeomSphere.h	/^    int GetVBO() const { return theVBO; }$/;"	f	class:GlGeomSphere
+GlGeomSphere	GlGeomSphere.h	/^    GlGeomSphere() : GlGeomSphere(0, 0) {}$/;"	f	class:GlGeomSphere
+GlGeomSphere	GlGeomSphere.h	/^class GlGeomSphere$/;"	c
+GlGeomSphere	GlGeomSphere.h	/^inline GlGeomSphere::GlGeomSphere(int slices, int stacks)$/;"	f	class:GlGeomSphere
+GlShaderMgr	GlShaderMgr.h	/^class GlShaderMgr {$/;"	c
+GoldenRatio	MathMisc.h	/^const double GoldenRatio = (sqrt(5.0)+1.0)*0.5;$/;"	v
+GoldenRatioInv	MathMisc.h	/^const double GoldenRatioInv = (sqrt(5.0)-1.0)*0.5;  \/\/ 1.0\/GoldenRatio$/;"	v
+GreaterOrEqualFuzzy	MathMisc.h	/^inline bool GreaterOrEqualFuzzy ( double x, double y ) $/;"	f
+HALF_LONG_MIN	MathMisc.h	/^const long HALF_LONG_MIN = (LONG_MIN>>1);	\/\/ Signed half of long min.$/;"	v
+HalfRoot3	MathMisc.h	/^const double HalfRoot3 = sqrt(3.0)\/2.0;$/;"	v
+Identity	LinearR3.cpp	/^const RotationMapR3 RotationMapR3::Identity;	\/\/ Default value is the identity$/;"	m	class:RotationMapR3	file:
+Identity	LinearR3.h	/^	static const RotationMapR3 Identity;$/;"	m	class:RotationMapR3
+Identity	LinearR4.h	/^	static const Matrix4x4 Identity;$/;"	m	class:Matrix4x4
+InitializeAttribLocations	GlGeomSphere.cpp	/^void GlGeomSphere::InitializeAttribLocations($/;"	f	class:GlGeomSphere
+InnerProduct	LinearR3.h	/^inline double InnerProduct(const VectorR3& u, const VectorR3& v ) { return (u^v); }$/;"	f
+InnerProduct	LinearR4.h	/^inline double InnerProduct(const VectorR4& u, const VectorR4& v ) { return (u^v); }$/;"	f
+InnerProduct	MathMisc.h	/^inline double InnerProduct( double x, double y ) $/;"	f
+Interpolate	LinearR3.h	/^inline VectorR3 Interpolate( const VectorR3& start, const VectorR3& end, double a)$/;"	f
+Inverse	LinearR3.cpp	/^AffineMapR3 AffineMapR3::Inverse() const				\/\/ Returns inverse$/;"	f	class:AffineMapR3
+Inverse	LinearR3.cpp	/^LinearMapR3 LinearMapR3::Inverse() const			\/\/ Returns inverse$/;"	f	class:LinearMapR3
+Inverse	LinearR3.h	/^inline RigidMapR3 RigidMapR3::Inverse() const		\/\/ Returns inverse$/;"	f	class:RigidMapR3
+Inverse	LinearR3.h	/^inline RotationMapR3 RotationMapR3::Inverse() const		\/\/ Returns inverse$/;"	f	class:RotationMapR3
+Inverse	LinearR4.cpp	/^LinearMapR4 LinearMapR4::Inverse() const			\/\/ Returns inverse$/;"	f	class:LinearMapR4
+Inverse	LinearR4.h	/^	inline RotationMapR4 Inverse() const { return Transpose(); }; \/\/ Returns the transpose$/;"	f	class:RotationMapR4
+InversePosDef	LinearR3.cpp	/^LinearMapR3 LinearMapR3::InversePosDef() const$/;"	f	class:LinearMapR3
+InversePosDef	LinearR3.cpp	/^void LinearMapR3::InversePosDef( LinearMapR3* inverse ) const			$/;"	f	class:LinearMapR3
+InverseSym	LinearR3.cpp	/^LinearMapR3 LinearMapR3::InverseSym() const$/;"	f	class:LinearMapR3
+InverseSym	LinearR3.cpp	/^void LinearMapR3::InverseSym( LinearMapR3* inverse ) const			$/;"	f	class:LinearMapR3
+Invert	LinearR3.cpp	/^AffineMapR3& AffineMapR3::Invert()					\/\/ Converts into inverse.$/;"	f	class:AffineMapR3
+Invert	LinearR3.cpp	/^LinearMapR3& LinearMapR3::Invert() 			\/\/ Converts into inverse.$/;"	f	class:LinearMapR3
+Invert	LinearR3.h	/^inline RigidMapR3& RigidMapR3::Invert()			\/\/ Converts into inverse.$/;"	f	class:RigidMapR3
+Invert	LinearR3.h	/^inline RotationMapR3& RotationMapR3::Invert()			\/\/ Converts into inverse.$/;"	f	class:RotationMapR3
+Invert	LinearR4.cpp	/^LinearMapR4& LinearMapR4::Invert() 			\/\/ Converts into inverse.$/;"	f	class:LinearMapR4
+Invert	LinearR4.h	/^	inline RotationMapR4& Invert() { MakeTranspose(); return *this; };	\/\/ Transposes it.$/;"	f	class:RotationMapR4
+Invert	LinearR4.h	/^inline VectorR4 RotationMapR4::Invert(const VectorR4& u) const  \/\/ Returns solution$/;"	f	class:RotationMapR4
+InvertPosDef	LinearR3.cpp	/^LinearMapR3& LinearMapR3::InvertPosDef()		$/;"	f	class:LinearMapR3
+InvertPosDefSafe	LinearR3.cpp	/^LinearMapR3& LinearMapR3::InvertPosDefSafe()		$/;"	f	class:LinearMapR3
+InvertSym	LinearR3.cpp	/^LinearMapR3& LinearMapR3::InvertSym()			$/;"	f	class:LinearMapR3
+IsAffine	LinearR4.h	/^inline bool LinearMapR4::IsAffine() const$/;"	f	class:LinearMapR4
+IsUnit	LinearR3.h	/^	bool IsUnit( ) const$/;"	f	class:VectorR3
+IsUnit	LinearR3.h	/^	bool IsUnit( double tolerance ) const$/;"	f	class:VectorR3
+IsUnit	LinearR4.h	/^	bool IsUnit( ) const$/;"	f	class:VectorR4
+IsUnit	LinearR4.h	/^	bool IsUnit( double tolerance ) const$/;"	f	class:VectorR4
+IsZero	LinearR3.h	/^	bool IsZero() const { return ( x==0.0 && y==0.0 && z==0.0 ); }$/;"	f	class:VectorR3
+IsZero	LinearR4.h	/^	bool IsZero() const { return ( x==0.0 && y==0.0 && z==0.0 && w==0.0); }$/;"	f	class:VectorR4
+LINEAR_R3_H	LinearR3.h	/^#define LINEAR_R3_H$/;"	d
+LINEAR_R4_H	LinearR4.h	/^#define LINEAR_R4_H$/;"	d
+LeftMultiplyBy	LinearR3.cpp	/^void Matrix3x3::LeftMultiplyBy (const Matrix3x3& M)	\/\/ Composition$/;"	f	class:Matrix3x3
+LeftMultiplyBy	LinearR3.h	/^	void LeftMultiplyBy( const Matrix3x3& M ) { Matrix3x3::LeftMultiplyBy(M); }$/;"	f	class:LinearMapR3
+LeftMultiplyBy	LinearR3.h	/^	void LeftMultiplyBy( const RotationMapR3& M ) { Matrix3x3::LeftMultiplyBy(M); }$/;"	f	class:RotationMapR3
+LeftMultiplyByTranspose	LinearR3.cpp	/^void Matrix3x3::LeftMultiplyByTranspose (const Matrix3x3& M)	\/\/ Composition$/;"	f	class:Matrix3x3
+LeftMultiplyByTranspose	LinearR3.h	/^	void LeftMultiplyByTranspose( const Matrix3x3& M ) { Matrix3x3::LeftMultiplyByTranspose(M); }$/;"	f	class:LinearMapR3
+LeftMultiplyByTranspose	LinearR3.h	/^	void LeftMultiplyByTranspose( const RotationMapR3& M ) { Matrix3x3::LeftMultiplyByTranspose(M); }$/;"	f	class:RotationMapR3
+Lerp	MathMisc.h	/^inline T Lerp( const T& a, const T&b, double alpha ) {$/;"	f
+Lerp	MathMisc.h	/^inline void Lerp( const T& a, const T&b, double alpha, T&c ) {$/;"	f
+LerpDelta	MathMisc.h	/^inline void LerpDelta( const T& a, const T&b, double alpha, T& c ) {$/;"	f
+LerpWith	MathMisc.h	/^inline void LerpWith( T* a, const T&b, double alpha ) {$/;"	f
+LerpWith	MathMisc.h	/^inline void LerpWith( double *a, double b, double alpha )$/;"	f
+LerpWith	MathMisc.h	/^inline void LerpWith( float *a, float b, float alpha )$/;"	f
+LessOrEqualFuzzy	MathMisc.h	/^inline bool LessOrEqualFuzzy( double x, double y )$/;"	f
+LinearMapR3	LinearR3.h	/^class LinearMapR3 : public Matrix3x3 {$/;"	c
+LinearMapR3	LinearR3.h	/^inline LinearMapR3::LinearMapR3 ( const Matrix3x3& A )$/;"	f	class:LinearMapR3
+LinearMapR3	LinearR3.h	/^inline LinearMapR3::LinearMapR3( $/;"	f	class:LinearMapR3
+LinearMapR3	LinearR3.h	/^inline LinearMapR3::LinearMapR3( const VectorR3& u, const VectorR3& v, $/;"	f	class:LinearMapR3
+LinearMapR3	LinearR3.h	/^inline LinearMapR3::LinearMapR3()$/;"	f	class:LinearMapR3
+LinearMapR4	LinearR4.h	/^class LinearMapR4 : public Matrix4x4 {$/;"	c
+LinearMapR4	LinearR4.h	/^inline LinearMapR4::LinearMapR4 ( const Matrix4x4& A )$/;"	f	class:LinearMapR4
+LinearMapR4	LinearR4.h	/^inline LinearMapR4::LinearMapR4( $/;"	f	class:LinearMapR4
+LinearMapR4	LinearR4.h	/^inline LinearMapR4::LinearMapR4( const VectorR4& u, const VectorR4& v, $/;"	f	class:LinearMapR4
+LinearMapR4	LinearR4.h	/^inline LinearMapR4::LinearMapR4()$/;"	f	class:LinearMapR4
+LinkShaderProgram	GlShaderMgr.cpp	/^unsigned int GlShaderMgr::LinkShaderProgram(int numShaders, const unsigned int shaderList[])$/;"	f	class:GlShaderMgr
+LnTwo	MathMisc.h	/^const double LnTwo = log(2.0);$/;"	v
+LnTwoInv	MathMisc.h	/^const double LnTwoInv = 1.0\/log(2.0);$/;"	v
+Load	LinearR3.h	/^inline VectorR3& VectorR3::Load( const double* v ) $/;"	f	class:VectorR3
+Load	LinearR3.h	/^inline VectorR3& VectorR3::Load( const float* v ) $/;"	f	class:VectorR3
+Load	LinearR4.h	/^inline VectorR4& VectorR4::Load( const double* v ) $/;"	f	class:VectorR4
+Load	LinearR4.h	/^inline VectorR4& VectorR4::Load( const float* v ) $/;"	f	class:VectorR4
+LoadBufferData	GlGeomSphere.cpp	/^void GlGeomSphere::LoadBufferData() {$/;"	f	class:GlGeomSphere
+LoadByRows	LinearR3.h	/^inline void Matrix3x3::LoadByRows( const double* a)$/;"	f	class:Matrix3x3
+LoadShaderSource	GlShaderMgr.cpp	/^bool GlShaderMgr::LoadShaderSource(const char* filename)$/;"	f	class:GlShaderMgr
+LoadShaderSource	GlShaderMgr.cpp	/^bool GlShaderMgr::LoadShaderSource(int numFiles, const char* filenamePtr[])$/;"	f	class:GlShaderMgr
+LoadSingleShaderFile	GlShaderMgr.cpp	/^bool GlShaderMgr::LoadSingleShaderFile(const char* filename, const char* shaderType, const char* shaderCodeName)$/;"	f	class:GlShaderMgr
+LoadSingleShaderString	GlShaderMgr.cpp	/^bool GlShaderMgr::LoadSingleShaderString(const char* shaderSource, const char* shaderType, const char* shaderCodeName)$/;"	f	class:GlShaderMgr
+LogPI	MathMisc.h	/^const double LogPI = log(PI);$/;"	v
+MATH_MISC_H	MathMisc.h	/^#define MATH_MISC_H$/;"	d
+Mag	LinearR3.h	/^inline double Mag(const VectorR3& u) { return u.Norm(); }$/;"	f
+Mag	LinearR4.h	/^inline double Mag(const VectorR4& u) { return u.Norm(); }$/;"	f
+Mag	MathMisc.h	/^inline double Mag ( double x ) {$/;"	f
+MakeTranspose	LinearR3.h	/^inline void Matrix3x3::MakeTranspose()	\/\/ Transposes it.$/;"	f	class:Matrix3x3
+MakeTranspose	LinearR4.h	/^inline void Matrix4x4::MakeTranspose()	\/\/ Transposes it.$/;"	f	class:Matrix4x4
+MakeUnit	LinearR3.h	/^inline VectorR3& VectorR3::MakeUnit ()			\/\/ Convert to unit vector (or leave zero).$/;"	f	class:VectorR3
+MakeUnit	LinearR4.h	/^inline VectorR4& VectorR4::MakeUnit ()			\/\/ Convert to unit vector (or leave zero).$/;"	f	class:VectorR4
+Matrix3x3	LinearR3.h	/^class Matrix3x3 {$/;"	c
+Matrix3x3	LinearR3.h	/^inline Matrix3x3::Matrix3x3( const VectorR3& u, const VectorR3& v, $/;"	f	class:Matrix3x3
+Matrix3x3	LinearR3.h	/^inline Matrix3x3::Matrix3x3( double a11, double a21, double a31,$/;"	f	class:Matrix3x3
+Matrix3x3	LinearR3.h	/^inline Matrix3x3::Matrix3x3() {}$/;"	f	class:Matrix3x3
+Matrix3x4	LinearR3.h	/^	Matrix3x4() {}$/;"	f	class:Matrix3x4
+Matrix3x4	LinearR3.h	/^class Matrix3x4$/;"	c
+Matrix3x4	LinearR3.h	/^inline Matrix3x4::Matrix3x4( const Matrix3x3& A, const VectorR3& u )$/;"	f	class:Matrix3x4
+Matrix3x4	LinearR3.h	/^inline Matrix3x4::Matrix3x4(const VectorR3& u, const VectorR3& v, $/;"	f	class:Matrix3x4
+Matrix3x4	LinearR3.h	/^inline Matrix3x4::Matrix3x4(double a11, double a21, double a31, $/;"	f	class:Matrix3x4
+Matrix4x4	LinearR4.h	/^class Matrix4x4 {$/;"	c
+Matrix4x4	LinearR4.h	/^inline Matrix4x4::Matrix4x4( const VectorR4& u, const VectorR4& v, $/;"	f	class:Matrix4x4
+Matrix4x4	LinearR4.h	/^inline Matrix4x4::Matrix4x4( double a11, double a21, double a31, double a41,$/;"	f	class:Matrix4x4
+Matrix4x4	LinearR4.h	/^inline Matrix4x4::Matrix4x4() {}$/;"	f	class:Matrix4x4
+Max	MathMisc.h	/^template<class T> inline T Max ( const T& x, const T& y ) $/;"	f
+MaxAbs	LinearR3.cpp	/^double VectorR3::MaxAbs() const$/;"	f	class:VectorR3
+MaxAbs	LinearR4.cpp	/^double VectorR4::MaxAbs() const$/;"	f	class:VectorR4
+Min	MathMisc.h	/^template<class T> inline T Min ( const T& x, const T& y ) $/;"	f
+Mult_glRotate	LinearR4.h	/^inline LinearMapR4& LinearMapR4::Mult_glRotate(double costheta, double sintheta, const VectorR3& axis)$/;"	f	class:LinearMapR4
+Mult_glRotate	LinearR4.h	/^inline LinearMapR4& LinearMapR4::Mult_glRotate(double costheta, double sintheta, double x, double y, double z)$/;"	f	class:LinearMapR4
+Mult_glRotate	LinearR4.h	/^inline LinearMapR4& LinearMapR4::Mult_glRotate(double radians, const VectorR3& axis)$/;"	f	class:LinearMapR4
+Mult_glRotate	LinearR4.h	/^inline LinearMapR4& LinearMapR4::Mult_glRotate(double radians, double x, double y, double z)$/;"	f	class:LinearMapR4
+Mult_glScale	LinearR4.h	/^inline LinearMapR4& LinearMapR4::Mult_glScale(double xScale, double yScale, double zScale)$/;"	f	class:LinearMapR4
+Mult_glScale	LinearR4.h	/^inline LinearMapR4& LinearMapR4::Mult_glScale(double xyzScale)$/;"	f	class:LinearMapR4
+Mult_glTranslate	LinearR4.h	/^inline LinearMapR4& LinearMapR4::Mult_glTranslate(const VectorR3& translation)$/;"	f	class:LinearMapR4
+Mult_glTranslate	LinearR4.h	/^inline LinearMapR4& LinearMapR4::Mult_glTranslate(double xTranslation, double yTranslation, double zTranslation)$/;"	f	class:LinearMapR4
+MyRenderImage	BufferInterface.cpp	/^void MyRenderImage() {$/;"	f
+MyRenderLight	BufferInterface.cpp	/^void MyRenderLight() {$/;"	f
+MyRenderWave	BufferInterface.cpp	/^void MyRenderWave() {$/;"	f
+MySetupSurfaces	BufferInterface.cpp	/^void MySetupSurfaces() {$/;"	f
+NearEqual	MathMisc.h	/^inline bool NearEqual( const T& a, const T& b, double tolerance ) {$/;"	f
+NearZero	LinearR3.h	/^	bool NearZero(double tolerance) const { return( MaxAbs()<=tolerance );}$/;"	f	class:VectorR3
+NearZero	LinearR4.h	/^	bool NearZero(double tolerance) const { return( MaxAbs()<=tolerance );}$/;"	f	class:VectorR4
+NearZero	MathMisc.h	/^inline bool NearZero( double x, double tolerance ) {$/;"	f
+Negate	LinearR3.h	/^	VectorR3& Negate() { x = -x; y = -y; z = -z; return *this;}	$/;"	f	class:VectorR3
+Negate	LinearR3.h	/^inline void LinearMapR3::Negate() $/;"	f	class:LinearMapR3
+Norm	LinearR3.h	/^	double Norm() const { return ( (double)sqrt( x*x + y*y + z*z ) ); }$/;"	f	class:VectorR3
+Norm	LinearR4.h	/^	double Norm() const { return ( (double)sqrt( x*x + y*y + z*z +w*w) ); }$/;"	f	class:VectorR4
+NormSq	LinearR3.h	/^	double NormSq() const { return ( x*x + y*y + z*z ); }$/;"	f	class:VectorR3
+NormSq	LinearR4.h	/^	double NormSq() const { return ( x*x + y*y + z*z + w*w ); }$/;"	f	class:VectorR4
+NormalOffset	GlGeomSphere.h	/^    int NormalOffset() const { return 3; }$/;"	f	class:GlGeomSphere
+Normalize	LinearR3.h	/^	VectorR3& Normalize () { *this \/= Norm(); return *this;}	\/\/ No error checking$/;"	f	class:VectorR3
+Normalize	LinearR4.h	/^	VectorR4& Normalize () { *this \/= Norm(); return *this; }	\/\/ No error checking$/;"	f	class:VectorR4
+NormalizeError	LinearR3.h	/^inline double NormalizeError (const VectorR3& u)$/;"	f
+NormalizeError	LinearR4.h	/^inline double NormalizeError (const VectorR4& u)$/;"	f
+NumObjects	BufferInterface.cpp	/^const int NumObjects = 3;$/;"	v
+OneEighth	MathMisc.h	/^const double OneEighth = 1.0\/8.0;$/;"	v
+OneMinusEpsilon15	MathMisc.h	/^const double OneMinusEpsilon15 = 1.0-1.0e-15;$/;"	v
+OnePlusEpsilon15	MathMisc.h	/^const double OnePlusEpsilon15 = 1.0+1.0e-15;$/;"	v
+OneSixth	MathMisc.h	/^const double OneSixth = 1.0\/6.0;$/;"	v
+OneThird	MathMisc.h	/^const double OneThird = 1.0\/3.0;$/;"	v
+OneTwelfth	MathMisc.h	/^const double OneTwelfth = 1.0\/12.0;$/;"	v
+OperatorTimesEquals	LinearR3.cpp	/^void Matrix3x3::OperatorTimesEquals(const Matrix3x3& B)	 \/\/ Matrix product$/;"	f	class:Matrix3x3
+OperatorTimesEquals	LinearR3.cpp	/^void Matrix3x4::OperatorTimesEquals (const Matrix3x3& B)	\/\/ Composition$/;"	f	class:Matrix3x4
+OperatorTimesEquals	LinearR3.cpp	/^void Matrix3x4::OperatorTimesEquals (const Matrix3x4& B)	\/\/ Composition$/;"	f	class:Matrix3x4
+OverSine	MathMisc.h	/^inline double OverSine( double x ) {$/;"	f
+PI	MathMisc.h	/^const double PI = 3.1415926535897932384626433832795028841972;$/;"	v
+PI2	MathMisc.h	/^const double PI2 = 2.0*PI;$/;"	v
+PI2inv	MathMisc.h	/^const double PI2inv = 0.5\/PI;$/;"	v
+PI4	MathMisc.h	/^const double PI4 = 4.0*PI;$/;"	v
+PISq	MathMisc.h	/^const double PISq = PI*PI;$/;"	v
+PIfourths	MathMisc.h	/^const double PIfourths = 0.25*PI;$/;"	v
+PIhalfinv	MathMisc.h	/^const double PIhalfinv = 2.0\/PI;$/;"	v
+PIhalves	MathMisc.h	/^const double PIhalves = 0.5*PI;$/;"	v
+PIinv	MathMisc.h	/^const double PIinv = 1.0\/PI;$/;"	v
+PIsixths	MathMisc.h	/^const double PIsixths = PI\/6.0;$/;"	v
+PIsixthsSq	MathMisc.h	/^const double PIsixthsSq = PIsixths*PIsixths;$/;"	v
+PIthirds	MathMisc.h	/^const double PIthirds = PI\/3.0;$/;"	v
+PItwelfths	MathMisc.h	/^const double PItwelfths = PI\/12.0;$/;"	v
+PItwelfthsSq	MathMisc.h	/^const double PItwelfthsSq = PItwelfths*PItwelfths;$/;"	v
+PItwothirds	MathMisc.h	/^const double PItwothirds = PI2\/3.0;$/;"	v
+PlaneProjectMap	LinearR3.h	/^inline LinearMapR3 PlaneProjectMap ( const VectorR3& u, const VectorR3 &v )$/;"	f
+PlaneProjectMap	LinearR3.h	/^inline LinearMapR3 PlaneProjectMap ( const VectorR3& w )$/;"	f
+PrimRestartIndex	GlGeomSphere.h	/^    unsigned short PrimRestartIndex = USHRT_MAX;        \/\/ Use for primitive restarts (starting new triangle strips)$/;"	m	class:GlGeomSphere
+ProjectPerpUnit	LinearR3.h	/^inline VectorR3 ProjectPerpUnit ( const VectorR3& u, const VectorR3& v)$/;"	f
+ProjectPerpUnit	LinearR4.h	/^inline VectorR4 ProjectPerpUnit ( const VectorR4& u, const VectorR4& v)$/;"	f
+ProjectPerpUnitDiff	LinearR3.h	/^inline VectorR3 ProjectPerpUnitDiff ( const VectorR3& u, const VectorR3& v)$/;"	f
+ProjectPerpUnitDiff	LinearR4.h	/^inline VectorR4 ProjectPerpUnitDiff ( const VectorR4& u, const VectorR4& v)$/;"	f
+ProjectToUnit	LinearR3.h	/^inline VectorR3 ProjectToUnit ( const VectorR3& u, const VectorR3& v)$/;"	f
+ProjectToUnit	LinearR4.h	/^inline VectorR4 ProjectToUnit ( const VectorR4& u, const VectorR4& v)$/;"	f
+RadiansToDegrees	MathMisc.h	/^const double RadiansToDegrees = 180.0\/PI;$/;"	v
+ReNormalize	LinearR3.cpp	/^Matrix3x3& Matrix3x3::ReNormalize()	\/\/ Re-normalizes nearly orthonormal matrix$/;"	f	class:Matrix3x3
+ReNormalize	LinearR3.cpp	/^Matrix3x4& Matrix3x4::ReNormalize()	\/\/ Re-normalizes nearly orthonormal matrix$/;"	f	class:Matrix3x4
+ReNormalize	LinearR3.h	/^inline VectorR3& VectorR3::ReNormalize()			\/\/ Convert near unit back to unit$/;"	f	class:VectorR3
+ReNormalize	LinearR4.cpp	/^Matrix4x4& Matrix4x4::ReNormalize() {$/;"	f	class:Matrix4x4
+ReNormalize	LinearR4.h	/^inline VectorR4& VectorR4::ReNormalize()			\/\/ Convert near unit back to unit$/;"	f	class:VectorR4
+ReNormalizeHelper	LinearR4.cpp	/^inline void ReNormalizeHelper ( double &a, double &b, double &c, double &d )$/;"	f
+Remesh	GlGeomSphere.cpp	/^void GlGeomSphere::Remesh(int slices, int stacks)$/;"	f	class:GlGeomSphere
+RemeshFloor	BufferInterface.cpp	/^void RemeshFloor()$/;"	f
+Render	GlGeomSphere.cpp	/^void GlGeomSphere::Render()$/;"	f	class:GlGeomSphere
+RightMultiplyByTranspose	LinearR3.cpp	/^void Matrix3x3::RightMultiplyByTranspose(const Matrix3x3& B)	 \/\/ Matrix product$/;"	f	class:Matrix3x3
+RightMultiplyByTranspose	LinearR3.h	/^	void RightMultiplyByTranspose( const Matrix3x3& M ) { Matrix3x3::RightMultiplyByTranspose(M); }$/;"	f	class:LinearMapR3
+RightMultiplyByTranspose	LinearR3.h	/^	void RightMultiplyByTranspose( const RotationMapR3& M ) { Matrix3x3::RightMultiplyByTranspose(M); }$/;"	f	class:RotationMapR3
+RigidMapR3	LinearR3.h	/^class RigidMapR3 : public Matrix3x4$/;"	c
+RigidMapR3	LinearR3.h	/^inline RigidMapR3::RigidMapR3( $/;"	f	class:RigidMapR3
+RigidMapR3	LinearR3.h	/^inline RigidMapR3::RigidMapR3( const Matrix3x3& A, const VectorR3& u )  \/\/ Set to RotationMap & Vector$/;"	f	class:RigidMapR3
+RigidMapR3	LinearR3.h	/^inline RigidMapR3::RigidMapR3( const VectorR3& u, const VectorR3& v, $/;"	f	class:RigidMapR3
+RigidMapR3	LinearR3.h	/^inline RigidMapR3::RigidMapR3()$/;"	f	class:RigidMapR3
+Root2	MathMisc.h	/^const double Root2 = sqrt(2.0);$/;"	v
+Root2Inv	MathMisc.h	/^const double Root2Inv = 1.0\/Root2;	\/\/ sqrt(2)\/2$/;"	v
+Root3	MathMisc.h	/^const double Root3 = sqrt(3.0);$/;"	v
+Rotate	LinearR3.cpp	/^VectorR3& VectorR3::Rotate( double theta, const VectorR3& w) $/;"	f	class:VectorR3
+RotateToMap	LinearR3.cpp	/^RotationMapR3 RotateToMap( const VectorR3& fromVec, const VectorR3& toVec)$/;"	f
+RotateToMap	LinearR4.cpp	/^RotationMapR4 RotateToMap( const VectorR4& fromVec, const VectorR4& toVec)$/;"	f
+RotateUnitInDirection	LinearR3.cpp	/^VectorR3& VectorR3::RotateUnitInDirection ( const VectorR3& dir)$/;"	f	class:VectorR3
+RotateUnitInDirection	LinearR4.cpp	/^VectorR4& VectorR4::RotateUnitInDirection ( const VectorR4& dir)$/;"	f	class:VectorR4
+RotationMapR3	LinearR3.h	/^class RotationMapR3 : public Matrix3x3 {$/;"	c
+RotationMapR3	LinearR3.h	/^inline RotationMapR3::RotationMapR3( $/;"	f	class:RotationMapR3
+RotationMapR3	LinearR3.h	/^inline RotationMapR3::RotationMapR3( const VectorR3& u, const VectorR3& v, $/;"	f	class:RotationMapR3
+RotationMapR3	LinearR3.h	/^inline RotationMapR3::RotationMapR3()$/;"	f	class:RotationMapR3
+RotationMapR4	LinearR4.h	/^class RotationMapR4 : public Matrix4x4 {$/;"	c
+RotationMapR4	LinearR4.h	/^inline RotationMapR4::RotationMapR4( $/;"	f	class:RotationMapR4
+RotationMapR4	LinearR4.h	/^inline RotationMapR4::RotationMapR4( const VectorR4& u, const VectorR4& v, $/;"	f	class:RotationMapR4
+RotationMapR4	LinearR4.h	/^inline RotationMapR4::RotationMapR4()$/;"	f	class:RotationMapR4
+Row1	LinearR3.h	/^inline VectorR3 Matrix3x3::Row1() const$/;"	f	class:Matrix3x3
+Row2	LinearR3.h	/^inline VectorR3 Matrix3x3::Row2() const$/;"	f	class:Matrix3x3
+Row3	LinearR3.h	/^inline VectorR3 Matrix3x3::Row3() const$/;"	f	class:Matrix3x3
+SafeAcos	MathMisc.h	/^inline double SafeAcos( double x ) {$/;"	f
+SafeAsin	MathMisc.h	/^inline double SafeAsin( double x ) {$/;"	f
+SafeSqrt	MathMisc.h	/^inline double SafeSqrt( double x ) {$/;"	f
+SameSignNonzero	MathMisc.h	/^template<class T> inline bool SameSignNonzero( const T& x, const T& y )$/;"	f
+Set	LinearR3.cpp	/^RotationMapR3& RotationMapR3::Set( const VectorR3& u, double s, double c )$/;"	f	class:RotationMapR3
+Set	LinearR3.cpp	/^RotationMapR3& RotationMapR3::Set( const VectorR3& u, double theta )$/;"	f	class:RotationMapR3
+Set	LinearR3.h	/^	VectorR3& Set( double xx, double yy, double zz ) $/;"	f	class:VectorR3
+Set	LinearR3.h	/^inline RigidMapR3& RigidMapR3::Set( const Matrix3x3& A, const VectorR3& u )  \/\/ Set to RotationMap & Vector$/;"	f	class:RigidMapR3
+Set	LinearR3.h	/^inline void Matrix3x3::Set ( const Matrix3x3& A )	\/\/ Set to the matrix.$/;"	f	class:Matrix3x3
+Set	LinearR3.h	/^inline void Matrix3x3::Set( const VectorR3& u, const VectorR3& v, $/;"	f	class:Matrix3x3
+Set	LinearR3.h	/^inline void Matrix3x3::Set( double a11, double a21, double a31, $/;"	f	class:Matrix3x3
+Set	LinearR3.h	/^inline void Matrix3x4::Set ( const Matrix3x3& A, const VectorR3& t )	\/\/ Set to the matrix plus 4th column$/;"	f	class:Matrix3x4
+Set	LinearR3.h	/^inline void Matrix3x4::Set ( const Matrix3x4& A )	\/\/ Set to the matrix.$/;"	f	class:Matrix3x4
+Set	LinearR3.h	/^inline void Matrix3x4::Set( const VectorR3& u, const VectorR3& v, $/;"	f	class:Matrix3x4
+Set	LinearR3.h	/^inline void Matrix3x4::Set( double a11, double a21, double a31, $/;"	f	class:Matrix3x4
+Set	LinearR4.h	/^	VectorR4& Set ( const VectorHgR3& h ) {x=h.x; y=h.y; z=h.z; w=h.w; return *this; }$/;"	f	class:VectorR4
+Set	LinearR4.h	/^	VectorR4& Set( double xx, double yy, double zz, double ww ) $/;"	f	class:VectorR4
+Set	LinearR4.h	/^inline void Matrix4x4::Set ( const Matrix4x4& M )	\/\/ Set to the matrix.$/;"	f	class:Matrix4x4
+Set	LinearR4.h	/^inline void Matrix4x4::Set( const VectorR4& u, const VectorR4& v, $/;"	f	class:Matrix4x4
+Set	LinearR4.h	/^inline void Matrix4x4::Set( double a11, double a21, double a31, double a41,$/;"	f	class:Matrix4x4
+Set3x3	LinearR3.h	/^inline void Matrix3x3::Set3x3 ( const Matrix3x4& A )	\/\/ Set to the 3x3 part of the matrix.$/;"	f	class:Matrix3x3
+Set3x3	LinearR3.h	/^inline void Matrix3x4::Set3x3 ( const Matrix3x3& A )$/;"	f	class:Matrix3x4
+Set3x3	LinearR3.h	/^inline void Matrix3x4::Set3x3( double a11, double a21, double a31, $/;"	f	class:Matrix3x4
+SetByRows	LinearR3.h	/^inline void Matrix3x3::SetByRows( const VectorR3& u, const VectorR3& v, $/;"	f	class:Matrix3x3
+SetByRows	LinearR3.h	/^inline void Matrix3x3::SetByRows( double a11, double a12, double a13, $/;"	f	class:Matrix3x3
+SetByRows	LinearR3.h	/^inline void Matrix3x4::SetByRows( double a11, double a12, double a13, double a14,$/;"	f	class:Matrix3x4
+SetByRows	LinearR4.h	/^inline void Matrix4x4::SetByRows( const VectorR4& u, const VectorR4& v, $/;"	f	class:Matrix4x4
+SetByRows	LinearR4.h	/^inline void Matrix4x4::SetByRows( double a11, double a12, double a13, double a14, $/;"	f	class:Matrix4x4
+SetColumn1	LinearR3.h	/^inline void Matrix3x3::SetColumn1 ( const VectorR3& u )$/;"	f	class:Matrix3x3
+SetColumn1	LinearR3.h	/^inline void Matrix3x3::SetColumn1 ( double x, double y, double z)$/;"	f	class:Matrix3x3
+SetColumn1	LinearR3.h	/^inline void Matrix3x4::SetColumn1 ( const VectorR3& u )$/;"	f	class:Matrix3x4
+SetColumn1	LinearR3.h	/^inline void Matrix3x4::SetColumn1 ( double x, double y, double z)$/;"	f	class:Matrix3x4
+SetColumn1	LinearR4.h	/^inline void Matrix4x4::SetColumn1 ( const VectorR4& u )$/;"	f	class:Matrix4x4
+SetColumn1	LinearR4.h	/^inline void Matrix4x4::SetColumn1 ( double x, double y, double z, double w)$/;"	f	class:Matrix4x4
+SetColumn2	LinearR3.h	/^inline void Matrix3x3::SetColumn2 ( const VectorR3& u )$/;"	f	class:Matrix3x3
+SetColumn2	LinearR3.h	/^inline void Matrix3x3::SetColumn2 ( double x, double y, double z)$/;"	f	class:Matrix3x3
+SetColumn2	LinearR3.h	/^inline void Matrix3x4::SetColumn2 ( const VectorR3& u )$/;"	f	class:Matrix3x4
+SetColumn2	LinearR3.h	/^inline void Matrix3x4::SetColumn2 ( double x, double y, double z)$/;"	f	class:Matrix3x4
+SetColumn2	LinearR4.h	/^inline void Matrix4x4::SetColumn2 ( const VectorR4& u )$/;"	f	class:Matrix4x4
+SetColumn2	LinearR4.h	/^inline void Matrix4x4::SetColumn2 ( double x, double y, double z, double w)$/;"	f	class:Matrix4x4
+SetColumn3	LinearR3.h	/^inline void Matrix3x3::SetColumn3 ( const VectorR3& u )$/;"	f	class:Matrix3x3
+SetColumn3	LinearR3.h	/^inline void Matrix3x3::SetColumn3 ( double x, double y, double z)$/;"	f	class:Matrix3x3
+SetColumn3	LinearR3.h	/^inline void Matrix3x4::SetColumn3 ( const VectorR3& u )$/;"	f	class:Matrix3x4
+SetColumn3	LinearR3.h	/^inline void Matrix3x4::SetColumn3 ( double x, double y, double z)$/;"	f	class:Matrix3x4
+SetColumn3	LinearR4.h	/^inline void Matrix4x4::SetColumn3 ( const VectorR4& u )$/;"	f	class:Matrix4x4
+SetColumn3	LinearR4.h	/^inline void Matrix4x4::SetColumn3 ( double x, double y, double z, double w)$/;"	f	class:Matrix4x4
+SetColumn4	LinearR3.h	/^inline void Matrix3x4::SetColumn4 ( const VectorR3& u )$/;"	f	class:Matrix3x4
+SetColumn4	LinearR3.h	/^inline void Matrix3x4::SetColumn4 ( double x, double y, double z )$/;"	f	class:Matrix3x4
+SetColumn4	LinearR4.h	/^inline void Matrix4x4::SetColumn4 ( const VectorR4& u )$/;"	f	class:Matrix4x4
+SetColumn4	LinearR4.h	/^inline void Matrix4x4::SetColumn4 ( double x, double y, double z, double w)$/;"	f	class:Matrix4x4
+SetCrossProductMatrix	LinearR3.h	/^inline void Matrix3x3::SetCrossProductMatrix( const VectorR3& u )$/;"	f	class:Matrix3x3
+SetDiagonal	LinearR3.h	/^inline void Matrix3x3::SetDiagonal( const VectorR3& u )$/;"	f	class:Matrix3x3
+SetDiagonal	LinearR3.h	/^inline void Matrix3x3::SetDiagonal( double x, double y, double z )$/;"	f	class:Matrix3x3
+SetDiagonal	LinearR4.h	/^inline void Matrix4x4::SetDiagonal( const VectorR4& u )$/;"	f	class:Matrix4x4
+SetDiagonal	LinearR4.h	/^inline void Matrix4x4::SetDiagonal( double x, double y, $/;"	f	class:Matrix4x4
+SetFromEulersYX	LinearR3.cpp	/^RotationMapR3& RotationMapR3::SetFromEulersYX( double rotationAngleY, double azimuth )$/;"	f	class:RotationMapR3
+SetFromHg	LinearR4.h	/^inline VectorR3& VectorR3::SetFromHg(const VectorR4& v) {$/;"	f	class:VectorR3
+SetIdentity	LinearR3.h	/^inline void AffineMapR3::SetIdentity ( )$/;"	f	class:AffineMapR3
+SetIdentity	LinearR3.h	/^inline void Matrix3x3::SetIdentity ( )$/;"	f	class:Matrix3x3
+SetIdentity	LinearR3.h	/^inline void Matrix3x4::SetIdentity ()		\/\/ Set to the identity map$/;"	f	class:Matrix3x4
+SetIdentity	LinearR4.h	/^inline void Matrix4x4::SetIdentity ( )$/;"	f	class:Matrix4x4
+SetNegUnitW	LinearR4.h	/^	VectorR4& SetNegUnitW() { x=0.0; y=0.0; z=0.0; w=-1.0; return *this;}$/;"	f	class:VectorR4
+SetNegUnitX	LinearR3.h	/^	VectorR3& SetNegUnitX() { x=-1.0; y=0.0; z=0.0;  return *this;}$/;"	f	class:VectorR3
+SetNegUnitX	LinearR4.h	/^	VectorR4& SetNegUnitX() { x=-1.0; y=0.0; z=0.0; w=0.0; return *this;}$/;"	f	class:VectorR4
+SetNegUnitY	LinearR3.h	/^	VectorR3& SetNegUnitY() { x=0.0; y=-1.0; z=0.0;  return *this;}$/;"	f	class:VectorR3
+SetNegUnitY	LinearR4.h	/^	VectorR4& SetNegUnitY() { x=0.0; y=-1.0; z=0.0; w=0.0; return *this;}$/;"	f	class:VectorR4
+SetNegUnitZ	LinearR3.h	/^	VectorR3& SetNegUnitZ() { x=0.0; y=0.0; z=-1.0;  return *this;}$/;"	f	class:VectorR3
+SetNegUnitZ	LinearR4.h	/^	VectorR4& SetNegUnitZ() { x=0.0; y=0.0; z=-1.0; w=0.0; return *this;}$/;"	f	class:VectorR4
+SetOuterProduct	LinearR3.h	/^inline void Matrix3x3::SetOuterProduct( const VectorR3& u, const VectorR3& v )$/;"	f	class:Matrix3x3
+SetRotationPart	LinearR3.cpp	/^RigidMapR3& RigidMapR3::SetRotationPart( const VectorR3& u, double s, double c )$/;"	f	class:RigidMapR3
+SetRotationPart	LinearR3.cpp	/^RigidMapR3& RigidMapR3::SetRotationPart( const VectorR3& u, double theta )$/;"	f	class:RigidMapR3
+SetRotationPart	LinearR3.h	/^inline RigidMapR3& RigidMapR3::SetRotationPart( const Matrix3x3& A)		\/\/ Set the rotation part$/;"	f	class:RigidMapR3
+SetRow1	LinearR3.h	/^inline void Matrix3x3::SetRow1 ( double x, double y, double z )$/;"	f	class:Matrix3x3
+SetRow1	LinearR3.h	/^inline void Matrix3x4::SetRow1 ( double x, double y, double z, double w )$/;"	f	class:Matrix3x4
+SetRow2	LinearR3.h	/^inline void Matrix3x3::SetRow2 ( double x, double y, double z )$/;"	f	class:Matrix3x3
+SetRow2	LinearR3.h	/^inline void Matrix3x4::SetRow2 ( double x, double y, double z, double w )$/;"	f	class:Matrix3x4
+SetRow3	LinearR3.h	/^inline void Matrix3x3::SetRow3 ( double x, double y, double z )$/;"	f	class:Matrix3x3
+SetRow3	LinearR3.h	/^inline void Matrix3x4::SetRow3 ( double x, double y, double z, double w )$/;"	f	class:Matrix3x4
+SetTranslationPart	LinearR3.h	/^inline RigidMapR3& RigidMapR3::SetTranslationPart( const VectorR3& u)	\/\/ Set the translation part$/;"	f	class:RigidMapR3
+SetTranslationPart	LinearR3.h	/^inline RigidMapR3& RigidMapR3::SetTranslationPart( double x, double y, double z)	\/\/ Set the translation part$/;"	f	class:RigidMapR3
+SetUnitW	LinearR4.h	/^	VectorR4& SetUnitW() { x=0.0; y=0.0; z=0.0; w=1.0; return *this;}$/;"	f	class:VectorR4
+SetUnitX	LinearR3.h	/^	VectorR3& SetUnitX() { x=1.0; y=0.0; z=0.0;  return *this;}$/;"	f	class:VectorR3
+SetUnitX	LinearR4.h	/^	VectorR4& SetUnitX() { x=1.0; y=0.0; z=0.0; w=0.0; return *this;}$/;"	f	class:VectorR4
+SetUnitY	LinearR3.h	/^	VectorR3& SetUnitY() { x=0.0; y=1.0; z=0.0;  return *this;}$/;"	f	class:VectorR3
+SetUnitY	LinearR4.h	/^	VectorR4& SetUnitY() { x=0.0; y=1.0; z=0.0; w=0.0; return *this;}$/;"	f	class:VectorR4
+SetUnitZ	LinearR3.h	/^	VectorR3& SetUnitZ() { x=0.0; y=0.0; z=1.0;  return *this;}$/;"	f	class:VectorR3
+SetUnitZ	LinearR4.h	/^	VectorR4& SetUnitZ() { x=0.0; y=0.0; z=1.0; w=0.0; return *this;}$/;"	f	class:VectorR4
+SetZero	LinearR3.h	/^	VectorR3& SetZero() { x=0.0; y=0.0; z=0.0;  return *this;}$/;"	f	class:VectorR3
+SetZero	LinearR3.h	/^inline void AffineMapR3::SetZero( ) $/;"	f	class:AffineMapR3
+SetZero	LinearR3.h	/^inline void LinearMapR3::SetZero( ) $/;"	f	class:LinearMapR3
+SetZero	LinearR3.h	/^inline void Matrix3x3::SetZero( ) $/;"	f	class:Matrix3x3
+SetZero	LinearR3.h	/^inline void Matrix3x4::SetZero ()			\/\/ Set to the zero map$/;"	f	class:Matrix3x4
+SetZero	LinearR4.h	/^	VectorR4& SetZero() { x=0.0; y=0.0; z=0.0; w=0.0; return *this;}$/;"	f	class:VectorR4
+SetZero	LinearR4.h	/^inline void Matrix4x4::SetZero( ) $/;"	f	class:Matrix4x4
+Set_glFrustum	LinearR4.cpp	/^LinearMapR4& LinearMapR4::Set_glFrustum(double left, double right, double bottom, double top, double near, double far)$/;"	f	class:LinearMapR4
+Set_glOrtho	LinearR4.cpp	/^LinearMapR4& LinearMapR4::Set_glOrtho(double left, double right,$/;"	f	class:LinearMapR4
+Set_glRotate	LinearR4.cpp	/^LinearMapR4& LinearMapR4::Set_glRotate(double costheta, double sintheta, double x, double y, double z)$/;"	f	class:LinearMapR4
+Set_glRotate	LinearR4.h	/^inline LinearMapR4& LinearMapR4::Set_glRotate(double costheta, double sintheta, const VectorR3& axis)$/;"	f	class:LinearMapR4
+Set_glRotate	LinearR4.h	/^inline LinearMapR4& LinearMapR4::Set_glRotate(double radians, const VectorR3& axis)$/;"	f	class:LinearMapR4
+Set_glRotate	LinearR4.h	/^inline LinearMapR4& LinearMapR4::Set_glRotate(double radians, double x, double y, double z)$/;"	f	class:LinearMapR4
+Set_glScale	LinearR4.h	/^inline LinearMapR4& LinearMapR4::Set_glScale(double xScale, double yScale, double zScale)$/;"	f	class:LinearMapR4
+Set_glScale	LinearR4.h	/^inline LinearMapR4& LinearMapR4::Set_glScale(double xyzScale)$/;"	f	class:LinearMapR4
+Set_glTranslate	LinearR4.h	/^inline LinearMapR4& LinearMapR4::Set_glTranslate(const VectorR3& translation)$/;"	f	class:LinearMapR4
+Set_glTranslate	LinearR4.h	/^inline LinearMapR4& LinearMapR4::Set_glTranslate(double xTranslation, double yTranslation, double zTranslation)$/;"	f	class:LinearMapR4
+Set_gluPerspective	LinearR4.cpp	/^LinearMapR4& LinearMapR4::Set_gluPerspective(double fieldofview_y_Radians, double aspectRatio, double zNear, double zFar)$/;"	f	class:LinearMapR4
+ShaderInfo	GlShaderMgr.h	/^    } ShaderInfo;$/;"	t	class:GlShaderMgr	typeref:struct:GlShaderMgr::__anon1
+ShaderType	GlShaderMgr.h	/^    enum ShaderType { vertex_shader, fragment_shader, geometryshader, code_block };$/;"	g	class:GlShaderMgr
+Sign	MathMisc.h	/^template<class T> inline int Sign( T x) $/;"	f
+SignedSqrt	MathMisc.h	/^inline double SignedSqrt( double a, double sgn )$/;"	f
+SineOver	MathMisc.h	/^inline double SineOver( double x ) {$/;"	f
+SixthPower	MathMisc.h	/^template<class T> inline T SixthPower( const T& x )$/;"	f
+SolidAngle	LinearR3.h	/^inline double SolidAngle( const VectorR3& v, const VectorR3& w)$/;"	f
+SolidAngle	LinearR4.h	/^inline double SolidAngle( const VectorR4& u, const VectorR4& v)$/;"	f
+SolidAngleUnit	LinearR4.h	/^inline double SolidAngleUnit( const VectorR4 u, const VectorR4 v )$/;"	f
+Solve	LinearR3.cpp	/^VectorR3 Matrix3x3::Solve(const VectorR3& u) const	\/\/ Returns solution$/;"	f	class:Matrix3x3
+Solve	LinearR3.h	/^inline VectorR3 AffineMapR3::Solve(const VectorR3& u) const	\/\/ Returns solution$/;"	f	class:AffineMapR3
+Solve	LinearR3.h	/^inline VectorR3 LinearMapR3::Solve(const VectorR3& u) const	\/\/ Returns solution$/;"	f	class:LinearMapR3
+Solve	LinearR3.h	/^inline VectorR3 Matrix3x4::Solve(const VectorR3& u) const	\/\/ Returns solution$/;"	f	class:Matrix3x4
+Solve	LinearR3.h	/^inline VectorR3 RotationMapR3::Solve(const VectorR3& u) const  \/\/ Returns solution$/;"	f	class:RotationMapR3
+Solve	LinearR4.cpp	/^VectorR4 LinearMapR4::Solve(const VectorR4& u) const	\/\/ Returns solution$/;"	f	class:LinearMapR4
+Square	MathMisc.h	/^template<class T> inline T Square ( const T& x ) $/;"	f
+StrideVal	GlGeomSphere.h	/^    int StrideVal() const {$/;"	f	class:GlGeomSphere
+SubtractFrom	LinearR3.h	/^inline VectorR3& VectorR3::SubtractFrom( const VectorR3& u  ) $/;"	f	class:VectorR3
+SubtractFrom	LinearR3.h	/^inline void LinearMapR3::SubtractFrom( const Matrix3x3& m)$/;"	f	class:LinearMapR3
+SumSquaresNorm	LinearR3.cpp	/^double Matrix3x3::SumSquaresNorm() const$/;"	f	class:Matrix3x3
+TempDumpData	LinearR4.cpp	/^float Matrix4x4::TempDumpData[16];$/;"	m	class:Matrix4x4	file:
+TempDumpData	LinearR4.h	/^    static float TempDumpData[16];          \/\/ Holds temporary data for DumpByColumns$/;"	m	class:Matrix4x4
+TexOffset	GlGeomSphere.h	/^    int TexOffset() const { return 3 + (UseTexCoords() ? 2 : 0); }$/;"	f	class:GlGeomSphere
+TimesCot	MathMisc.h	/^inline double TimesCot ( double x ) {	$/;"	f
+TimesTranspose	LinearR4.cpp	/^LinearMapR4 TimesTranspose( const VectorR4& u, const VectorR4& v)$/;"	f
+TimesTranspose	LinearR4.h	/^inline void TimesTranspose( const VectorR4& u, const VectorR4& v, LinearMapR4& M)$/;"	f
+ToAngle	LinearR3.cpp	/^double RotationMapR3::ToAngle() const$/;"	f	class:RotationMapR3
+ToAxisAndAngle	LinearR3.cpp	/^bool RotationMapR3::ToAxisAndAngle( VectorR3* u, double *theta ) const$/;"	f	class:RotationMapR3
+ToRotationMapR3	LinearR3.h	/^inline RotationMapR3 ToRotationMapR3( const Quaternion& q )$/;"	f
+ToVectorR3	LinearR3.h	/^inline VectorR3 ToVectorR3( const Quaternion& q ) $/;"	f
+Trace	LinearR3.h	/^	double Trace() const { return m11+m22+m33; }$/;"	f	class:Matrix3x3
+Trace	LinearR4.h	/^	double Trace() const { return m11+m22+m33+m44; }$/;"	f	class:Matrix4x4
+Transform	LinearR3.h	/^inline void Matrix3x3::Transform( VectorR3* u ) const {$/;"	f	class:Matrix3x3
+Transform	LinearR3.h	/^inline void Matrix3x3::Transform( const VectorR3& src, VectorR3* dest ) const {$/;"	f	class:Matrix3x3
+Transform	LinearR3.h	/^inline void Matrix3x4::Transform( VectorR3* u ) const {$/;"	f	class:Matrix3x4
+Transform	LinearR3.h	/^inline void Matrix3x4::Transform( const VectorR3& src, VectorR3* dest ) const {$/;"	f	class:Matrix3x4
+Transform	LinearR4.h	/^inline void Matrix3x4::Transform( VectorR4* u ) const {$/;"	f	class:Matrix3x4
+Transform	LinearR4.h	/^inline void Matrix3x4::Transform( const VectorR4& src, VectorR4* dest ) const {$/;"	f	class:Matrix3x4
+Transform3x3	LinearR3.h	/^inline void Matrix3x4::Transform3x3( VectorR3* u ) const {$/;"	f	class:Matrix3x4
+Transform3x3	LinearR3.h	/^inline void Matrix3x4::Transform3x3( const VectorR3& src, VectorR3* dest ) const {$/;"	f	class:Matrix3x4
+Transform3x3Inverse	LinearR3.h	/^	void Transform3x3Inverse( VectorR3* dest ) const$/;"	f	class:RigidMapR3
+Transform3x3Inverse	LinearR3.h	/^	void Transform3x3Inverse( const VectorR3& src, VectorR3* dest ) const$/;"	f	class:RigidMapR3
+Transform3x3Transpose	LinearR3.h	/^inline void Matrix3x4::Transform3x3Transpose( VectorR3* u ) const {$/;"	f	class:Matrix3x4
+Transform3x3Transpose	LinearR3.h	/^inline void Matrix3x4::Transform3x3Transpose( const VectorR3& src, VectorR3* dest ) const {$/;"	f	class:Matrix3x4
+TransformTranspose	LinearR3.h	/^inline void Matrix3x3::TransformTranspose( VectorR3* u ) const {$/;"	f	class:Matrix3x3
+TransformTranspose	LinearR3.h	/^inline void Matrix3x3::TransformTranspose( const VectorR3& src, VectorR3* dest ) const {$/;"	f	class:Matrix3x3
+Transpose	LinearR3.h	/^	RotationMapR3 Transpose() const { return Inverse(); };	\/\/ Returns the transpose$/;"	f	class:RotationMapR3
+Transpose	LinearR3.h	/^inline LinearMapR3 LinearMapR3::Transpose() const	\/\/ Returns the transpose$/;"	f	class:LinearMapR3
+Transpose	LinearR4.h	/^inline LinearMapR4 LinearMapR4::Transpose() const	\/\/ Returns the transpose$/;"	f	class:LinearMapR4
+Transpose	LinearR4.h	/^inline RotationMapR4 RotationMapR4::Transpose() const	\/\/ Returns the transpose$/;"	f	class:RotationMapR4
+TwoPiSqrtInv	MathMisc.h	/^const double TwoPiSqrtInv = 1.0\/sqrt(2.0*PI);$/;"	v
+TwoThirds	MathMisc.h	/^const double TwoThirds = 2.0\/3.0;$/;"	v
+UpdateMax	MathMisc.h	/^template<class T> inline T& UpdateMax ( const T& x, T& y ) $/;"	f
+UpdateMaxAbs	MathMisc.h	/^inline bool UpdateMaxAbs( double *maxabs, double updateval )$/;"	f
+UpdateMin	MathMisc.h	/^template<class T> inline T& UpdateMin ( const T& x, T& y ) $/;"	f
+UpdateMinMax	MathMisc.h	/^template<class T> inline int UpdateMinMax ( const T& x, T& min, T& max ) $/;"	f
+UseNormals	GlGeomSphere.h	/^    bool UseNormals() const { return normalLoc != UINT_MAX; }$/;"	f	class:GlGeomSphere
+UseTexCoords	GlGeomSphere.h	/^    bool UseTexCoords() const { return texcoordsLoc != UINT_MAX; }$/;"	f	class:GlGeomSphere
+VectorHgR3	LinearR3.h	/^	VectorHgR3 ( const VectorR3& u ) : x(u.x), y(u.y), z(u.z), w(1.0) {}$/;"	f	class:VectorHgR3
+VectorHgR3	LinearR3.h	/^	VectorHgR3( ) : x(0.0), y(0.0), z(0.0), w(1.0) {}$/;"	f	class:VectorHgR3
+VectorHgR3	LinearR3.h	/^	VectorHgR3( double xVal, double yVal, double zVal )$/;"	f	class:VectorHgR3
+VectorHgR3	LinearR3.h	/^	VectorHgR3( double xVal, double yVal, double zVal, double wVal )$/;"	f	class:VectorHgR3
+VectorHgR3	LinearR3.h	/^class VectorHgR3 {$/;"	c
+VectorProjectMap	LinearR3.h	/^inline LinearMapR3 VectorProjectMap( const VectorR3& u )$/;"	f
+VectorProjectMap	LinearR4.h	/^inline LinearMapR4 VectorProjectMap( const VectorR4& u )$/;"	f
+VectorProjectMap	LinearR4.h	/^inline void VectorProjectMap( const VectorR4& u, LinearMapR4& M )$/;"	f
+VectorR3	LinearR3.h	/^	VectorR3( ) : x(0.0), y(0.0), z(0.0) {}$/;"	f	class:VectorR3
+VectorR3	LinearR3.h	/^	VectorR3( double xVal, double yVal, double zVal )$/;"	f	class:VectorR3
+VectorR3	LinearR3.h	/^class VectorR3 {$/;"	c
+VectorR3	LinearR3.h	/^inline VectorR3::VectorR3( const VectorHgR3& uH ) $/;"	f	class:VectorR3
+VectorR4	LinearR4.h	/^	VectorR4( ) : x(0.0), y(0.0), z(0.0), w(0.0) {}$/;"	f	class:VectorR4
+VectorR4	LinearR4.h	/^	VectorR4( double xVal, double yVal, double zVal, double wVal )$/;"	f	class:VectorR4
+VectorR4	LinearR4.h	/^class VectorR4 {$/;"	c
+VrRotate	LinearR3.cpp	/^RotationMapR3 VrRotate( double c, double s, const VectorR3& u )$/;"	f
+VrRotate	LinearR3.cpp	/^RotationMapR3 VrRotate( double theta, const VectorR3& u )$/;"	f
+VrRotateAlign	LinearR3.cpp	/^RotationMapR3 VrRotateAlign( const VectorR3& fromVec, const VectorR3& toVec)$/;"	f
+Xmax	GlslWaves.cpp	/^const double Xmax = 6.0;                \/\/ Control x dimensions of viewable scene$/;"	v
+YaxisDist	LinearR3.h	/^	double YaxisDist() const { return sqrt(x*x+z*z); }$/;"	f	class:VectorR3
+YaxisDistSq	LinearR3.h	/^	double YaxisDistSq() const { return (x*x+z*z); }$/;"	f	class:VectorR3
+Ymax	GlslWaves.cpp	/^const double Ymax = 4.0;                \/\/ Control y dimensions of viewable scene$/;"	v
+Zero	LinearR3.cpp	/^const VectorR3 VectorR3::Zero;					\/\/ Default value is zero$/;"	m	class:VectorR3	file:
+Zero	LinearR3.h	/^	static const VectorR3 Zero;$/;"	m	class:VectorR3
+Zero	LinearR4.cpp	/^const VectorR4 VectorR4::Zero;$/;"	m	class:VectorR4	file:
+Zero	LinearR4.h	/^	static const VectorR4 Zero;$/;"	m	class:VectorR4
+ZeroValue	MathMisc.h	/^inline double ZeroValue(const double& )$/;"	f
+Zmax	GlslWaves.cpp	/^const double Zmin = -8.0, Zmax = 8.0;   \/\/ Control z dimensions of the viewable scene$/;"	v
+Zmin	GlslWaves.cpp	/^const double Zmin = -8.0, Zmax = 8.0;   \/\/ Control z dimensions of the viewable scene$/;"	v
+_ISNAN_	MathMisc.h	/^#define _ISNAN_ /;"	d
+animateIncrement	GlslWaves.cpp	/^float animateIncrement = 1;$/;"	v
+averageOf	MathMisc.h	/^inline void averageOf ( const T& a, const T &b, T&c ) {$/;"	f
+check_compilation_shader	GlShaderMgr.cpp	/^ unsigned int GlShaderMgr::check_compilation_shader(unsigned int shader) {$/;"	f	class:GlShaderMgr
+check_for_opengl_errors	GlslWaves.cpp	/^bool check_for_opengl_errors() {$/;"	f
+check_link_status	GlShaderMgr.cpp	/^unsigned int GlShaderMgr::check_link_status(unsigned int program) {$/;"	f	class:GlShaderMgr
+code_block	GlShaderMgr.h	/^    enum ShaderType { vertex_shader, fragment_shader, geometryshader, code_block };$/;"	e	enum:GlShaderMgr::ShaderType
+currentTime	GlslWaves.cpp	/^float currentTime = 0;$/;"	v
+deltaAngle	GlslWaves.cpp	/^double deltaAngle = 0.01;	\/\/ Change in view angle for each up\/down\/left\/right arrow key press$/;"	v
+errNames	GlslWaves.cpp	/^char errNames[8][36] = {$/;"	v
+error_callback	GlslWaves.cpp	/^void error_callback(int error, const char* description)$/;"	f
+findCodeName	GlShaderMgr.cpp	/^std::vector<GlShaderMgr::ShaderInfo>::iterator GlShaderMgr::findCodeName(std::string theName)$/;"	f	class:GlShaderMgr
+findOpenGLhandle	GlShaderMgr.cpp	/^std::vector<GlShaderMgr::ShaderInfo>::iterator GlShaderMgr::findOpenGLhandle(unsigned int theHandle)$/;"	f	class:GlShaderMgr
+fragment_shader	GlShaderMgr.h	/^    enum ShaderType { vertex_shader, fragment_shader, geometryshader, code_block };$/;"	e	enum:GlShaderMgr::ShaderType
+geometryshader	GlShaderMgr.h	/^    enum ShaderType { vertex_shader, fragment_shader, geometryshader, code_block };$/;"	e	enum:GlShaderMgr::ShaderType
+iFloor	BufferInterface.cpp	/^const int iFloor = 0;$/;"	v
+iImage	BufferInterface.cpp	/^const int iImage = 1;$/;"	v
+iLight	BufferInterface.cpp	/^const int iLight = 2;$/;"	v
+imageModelviewMatLocation	GlslWaves.cpp	/^int imageModelviewMatLocation;$/;"	v
+imageProgram	GlslWaves.cpp	/^int imageProgram;$/;"	v
+imageProjMatLocation	GlslWaves.cpp	/^int imageProjMatLocation;$/;"	v
+key_callback	GlslWaves.cpp	/^void key_callback(GLFWwindow* window, int key, int scancode, int action, int mods) {$/;"	f
+m11	LinearR3.h	/^	double m11, m12, m13, m21, m22, m23, m31, m32, m33;$/;"	m	class:Matrix3x4
+m11	LinearR3.h	/^	double m11, m21, m31, m12, m22, m32, m13, m23, m33;	$/;"	m	class:Matrix3x3
+m11	LinearR4.h	/^	double m11, m21, m31, m41, m12, m22, m32, m42,$/;"	m	class:Matrix4x4
+m12	LinearR3.h	/^	double m11, m12, m13, m21, m22, m23, m31, m32, m33;$/;"	m	class:Matrix3x4
+m12	LinearR3.h	/^	double m11, m21, m31, m12, m22, m32, m13, m23, m33;	$/;"	m	class:Matrix3x3
+m12	LinearR4.h	/^	double m11, m21, m31, m41, m12, m22, m32, m42,$/;"	m	class:Matrix4x4
+m13	LinearR3.h	/^	double m11, m12, m13, m21, m22, m23, m31, m32, m33;$/;"	m	class:Matrix3x4
+m13	LinearR3.h	/^	double m11, m21, m31, m12, m22, m32, m13, m23, m33;	$/;"	m	class:Matrix3x3
+m13	LinearR4.h	/^		   m13, m23, m33, m43, m14, m24, m34, m44;$/;"	m	class:Matrix4x4
+m14	LinearR3.h	/^	double m14, m24, m34;$/;"	m	class:Matrix3x4
+m14	LinearR4.h	/^		   m13, m23, m33, m43, m14, m24, m34, m44;$/;"	m	class:Matrix4x4
+m21	LinearR3.h	/^	double m11, m12, m13, m21, m22, m23, m31, m32, m33;$/;"	m	class:Matrix3x4
+m21	LinearR3.h	/^	double m11, m21, m31, m12, m22, m32, m13, m23, m33;	$/;"	m	class:Matrix3x3
+m21	LinearR4.h	/^	double m11, m21, m31, m41, m12, m22, m32, m42,$/;"	m	class:Matrix4x4
+m22	LinearR3.h	/^	double m11, m12, m13, m21, m22, m23, m31, m32, m33;$/;"	m	class:Matrix3x4
+m22	LinearR3.h	/^	double m11, m21, m31, m12, m22, m32, m13, m23, m33;	$/;"	m	class:Matrix3x3
+m22	LinearR4.h	/^	double m11, m21, m31, m41, m12, m22, m32, m42,$/;"	m	class:Matrix4x4
+m23	LinearR3.h	/^	double m11, m12, m13, m21, m22, m23, m31, m32, m33;$/;"	m	class:Matrix3x4
+m23	LinearR3.h	/^	double m11, m21, m31, m12, m22, m32, m13, m23, m33;	$/;"	m	class:Matrix3x3
+m23	LinearR4.h	/^		   m13, m23, m33, m43, m14, m24, m34, m44;$/;"	m	class:Matrix4x4
+m24	LinearR3.h	/^	double m14, m24, m34;$/;"	m	class:Matrix3x4
+m24	LinearR4.h	/^		   m13, m23, m33, m43, m14, m24, m34, m44;$/;"	m	class:Matrix4x4
+m31	LinearR3.h	/^	double m11, m12, m13, m21, m22, m23, m31, m32, m33;$/;"	m	class:Matrix3x4
+m31	LinearR3.h	/^	double m11, m21, m31, m12, m22, m32, m13, m23, m33;	$/;"	m	class:Matrix3x3
+m31	LinearR4.h	/^	double m11, m21, m31, m41, m12, m22, m32, m42,$/;"	m	class:Matrix4x4
+m32	LinearR3.h	/^	double m11, m12, m13, m21, m22, m23, m31, m32, m33;$/;"	m	class:Matrix3x4
+m32	LinearR3.h	/^	double m11, m21, m31, m12, m22, m32, m13, m23, m33;	$/;"	m	class:Matrix3x3
+m32	LinearR4.h	/^	double m11, m21, m31, m41, m12, m22, m32, m42,$/;"	m	class:Matrix4x4
+m33	LinearR3.h	/^	double m11, m12, m13, m21, m22, m23, m31, m32, m33;$/;"	m	class:Matrix3x4
+m33	LinearR3.h	/^	double m11, m21, m31, m12, m22, m32, m13, m23, m33;	$/;"	m	class:Matrix3x3
+m33	LinearR4.h	/^		   m13, m23, m33, m43, m14, m24, m34, m44;$/;"	m	class:Matrix4x4
+m34	LinearR3.h	/^	double m14, m24, m34;$/;"	m	class:Matrix3x4
+m34	LinearR4.h	/^		   m13, m23, m33, m43, m14, m24, m34, m44;$/;"	m	class:Matrix4x4
+m41	LinearR4.h	/^	double m11, m21, m31, m41, m12, m22, m32, m42,$/;"	m	class:Matrix4x4
+m42	LinearR4.h	/^	double m11, m21, m31, m41, m12, m22, m32, m42,$/;"	m	class:Matrix4x4
+m43	LinearR4.h	/^		   m13, m23, m33, m43, m14, m24, m34, m44;$/;"	m	class:Matrix4x4
+m44	LinearR4.h	/^		   m13, m23, m33, m43, m14, m24, m34, m44;$/;"	m	class:Matrix4x4
+main	GlslWaves.cpp	/^int main() {$/;"	f
+matEntries	GlslWaves.cpp	/^float matEntries[16];		\/\/ Holds 16 floats (since cannot load doubles into a shader that uses floats)$/;"	v
+meshRes	GlslWaves.cpp	/^int meshRes=4;$/;"	v
+myEBO	BufferInterface.cpp	/^unsigned int myEBO[NumObjects];  \/\/ a Element Array Buffer Object - holds an array of elements (vertex indices)$/;"	v
+myRenderScene	GlslWaves.cpp	/^void myRenderScene() {$/;"	f
+mySetViewMatrix	GlslWaves.cpp	/^void mySetViewMatrix() {$/;"	f
+myVAO	BufferInterface.cpp	/^unsigned int myVAO[NumObjects];  \/\/ a Vertex Array Object - holds info about an array of vertex data;$/;"	v
+myVBO	BufferInterface.cpp	/^unsigned int myVBO[NumObjects];  \/\/ a Vertex Buffer Object holds an array of data$/;"	v
+my_setup_OpenGL	GlslWaves.cpp	/^void my_setup_OpenGL() {$/;"	f
+my_setup_SceneData	GlslWaves.cpp	/^void my_setup_SceneData() {$/;"	f
+normalLoc	GlGeomSphere.h	/^    unsigned int normalLoc;         \/\/ location of vertex normal data in the shader program$/;"	m	class:GlGeomSphere
+numSlices	GlGeomSphere.h	/^    int numSlices;              \/\/ Number of radial slices (like case slices)$/;"	m	class:GlGeomSphere
+numStacks	GlGeomSphere.h	/^    int numStacks;              \/\/ Number of levels separating the north pole from the south pole.$/;"	m	class:GlGeomSphere
+openGLtypes	GlShaderMgr.cpp	/^std::vector<unsigned int> GlShaderMgr::openGLtypes = {$/;"	m	class:GlShaderMgr	file:
+openGLtypes	GlShaderMgr.h	/^    static std::vector<unsigned int> openGLtypes;$/;"	m	class:GlShaderMgr
+operator !=	LinearR3.h	/^	inline bool operator!=(const VectorR3& u) const { return (x!=u.x || y!=u.y || z!=u.z); }$/;"	f	class:VectorR3
+operator *	LinearR3.cpp	/^AffineMapR3 operator* ( const AffineMapR3& A, const AffineMapR3& B )$/;"	f
+operator *	LinearR3.cpp	/^AffineMapR3 operator* ( const AffineMapR3& A, const LinearMapR3& B )$/;"	f
+operator *	LinearR3.cpp	/^AffineMapR3 operator* ( const LinearMapR3& A, const AffineMapR3& B )$/;"	f
+operator *	LinearR3.cpp	/^LinearMapR3 operator* ( const LinearMapR3& A, const LinearMapR3& B)$/;"	f
+operator *	LinearR3.cpp	/^RotationMapR3 operator*(const RotationMapR3& A, const RotationMapR3& B) $/;"	f
+operator *	LinearR3.h	/^inline AffineMapR3 operator* ( double b, const AffineMapR3& A)$/;"	f
+operator *	LinearR3.h	/^inline AffineMapR3 operator* (const AffineMapR3& A,  double b)$/;"	f
+operator *	LinearR3.h	/^inline LinearMapR3 operator* (  double b, const LinearMapR3& A)$/;"	f
+operator *	LinearR3.h	/^inline LinearMapR3 operator* ( const LinearMapR3& A,  double b)$/;"	f
+operator *	LinearR3.h	/^inline VectorR3 operator* ( const Matrix3x3& A, const VectorR3& u)$/;"	f
+operator *	LinearR3.h	/^inline VectorR3 operator* ( const Matrix3x4& A, const VectorR3& u )$/;"	f
+operator *	LinearR3.h	/^inline VectorR3 operator* (const VectorR3& u, const VectorR3& v)	\/\/ Cross Product$/;"	f
+operator *	LinearR3.h	/^inline VectorR3 operator*(  double m, const VectorR3& u) $/;"	f
+operator *	LinearR3.h	/^inline VectorR3 operator*( const VectorR3& u,  double m) $/;"	f
+operator *	LinearR4.h	/^inline LinearMapR4 operator* (  double b, const LinearMapR4& A)$/;"	f
+operator *	LinearR4.h	/^inline LinearMapR4 operator* ( const LinearMapR4& A,  double b)$/;"	f
+operator *	LinearR4.h	/^inline LinearMapR4 operator* ( const LinearMapR4& A, const Matrix4x4& B)$/;"	f
+operator *	LinearR4.h	/^inline LinearMapR4 operator* ( const Matrix4x4& A, const LinearMapR4& B)$/;"	f
+operator *	LinearR4.h	/^inline RotationMapR4 operator* ( const RotationMapR4& A, const RotationMapR4& B)$/;"	f
+operator *	LinearR4.h	/^inline VectorR4 operator* ( const LinearMapR4& A, const VectorR4& u)$/;"	f
+operator *	LinearR4.h	/^inline VectorR4 operator* ( const Matrix4x4& A, const VectorR4& u)$/;"	f
+operator *	LinearR4.h	/^inline VectorR4 operator*(  double m, const VectorR4& u) $/;"	f
+operator *	LinearR4.h	/^inline VectorR4 operator*( const VectorR4& u,  double m) $/;"	f
+operator *=	LinearR3.h	/^	VectorR3& operator*= ( double m ) $/;"	f	class:VectorR3
+operator *=	LinearR3.h	/^inline AffineMapR3& AffineMapR3::operator*= ( double b)$/;"	f	class:AffineMapR3
+operator *=	LinearR3.h	/^inline AffineMapR3& AffineMapR3::operator*= (const Matrix3x3& B)	\/\/ Composition$/;"	f	class:AffineMapR3
+operator *=	LinearR3.h	/^inline AffineMapR3& AffineMapR3::operator*= (const Matrix3x4& B)	\/\/ Composition$/;"	f	class:AffineMapR3
+operator *=	LinearR3.h	/^inline LinearMapR3& LinearMapR3::operator*= ( double b)$/;"	f	class:LinearMapR3
+operator *=	LinearR3.h	/^inline LinearMapR3& LinearMapR3::operator*= (const Matrix3x3& B)	\/\/ Matrix product$/;"	f	class:LinearMapR3
+operator *=	LinearR3.h	/^inline RigidMapR3& RigidMapR3::operator*= (const RigidMapR3& B)	\/\/ Composition$/;"	f	class:RigidMapR3
+operator *=	LinearR3.h	/^inline RigidMapR3& RigidMapR3::operator*= (const RotationMapR3& B)	\/\/ Composition$/;"	f	class:RigidMapR3
+operator *=	LinearR3.h	/^inline RotationMapR3& RotationMapR3::operator*= (const RotationMapR3& B)	\/\/ Matrix product$/;"	f	class:RotationMapR3
+operator *=	LinearR3.h	/^inline VectorR3& VectorR3::operator*= (const VectorR3& v)		\/\/ Cross Product$/;"	f	class:VectorR3
+operator *=	LinearR4.cpp	/^void Matrix4x4::operator*= (const Matrix4x4& B)	\/\/ Matrix product$/;"	f	class:Matrix4x4
+operator *=	LinearR4.h	/^	VectorR4& operator*= ( double m ) $/;"	f	class:VectorR4
+operator *=	LinearR4.h	/^inline LinearMapR4& LinearMapR4::operator*= ( double b)$/;"	f	class:LinearMapR4
+operator *=	LinearR4.h	/^inline LinearMapR4& LinearMapR4::operator*= (const Matrix4x4& B)	\/\/ Matrix product$/;"	f	class:LinearMapR4
+operator *=	LinearR4.h	/^inline RotationMapR4& RotationMapR4::operator*= (const RotationMapR4& B)  \/\/ Matrix product$/;"	f	class:RotationMapR4
+operator +	LinearR3.h	/^inline AffineMapR3 operator+ (const AffineMapR3& A, const AffineMapR3& B)$/;"	f
+operator +	LinearR3.h	/^inline AffineMapR3 operator+ (const AffineMapR3& A, const Matrix3x3& B)$/;"	f
+operator +	LinearR3.h	/^inline AffineMapR3 operator+ (const Matrix3x3& B, const AffineMapR3& A)$/;"	f
+operator +	LinearR3.h	/^inline LinearMapR3 operator+ (const LinearMapR3& A, const LinearMapR3& B)$/;"	f
+operator +	LinearR3.h	/^inline LinearMapR3 operator+ (const LinearMapR3& A, const Matrix3x3& B)$/;"	f
+operator +	LinearR3.h	/^inline LinearMapR3 operator+ (const Matrix3x3& A, const LinearMapR3& B)$/;"	f
+operator +	LinearR3.h	/^inline VectorR3 operator+( const VectorR3& u, const VectorR3& v ) $/;"	f
+operator +	LinearR4.h	/^inline LinearMapR4 operator+ (const LinearMapR4& A, const LinearMapR4& B)$/;"	f
+operator +	LinearR4.h	/^inline VectorR4 operator+( const VectorR4& u, const VectorR4& v ) $/;"	f
+operator +=	LinearR3.h	/^	VectorR3& operator+= ( const VectorR3& v ) $/;"	f	class:VectorR3
+operator +=	LinearR3.h	/^inline AffineMapR3& AffineMapR3::operator+= (const Matrix3x4& B)$/;"	f	class:AffineMapR3
+operator +=	LinearR3.h	/^inline LinearMapR3& LinearMapR3::operator+= (const Matrix3x3& B)$/;"	f	class:LinearMapR3
+operator +=	LinearR4.h	/^	VectorR4& operator+= ( const VectorR4& v ) $/;"	f	class:VectorR4
+operator +=	LinearR4.h	/^inline LinearMapR4& LinearMapR4::operator+= (const LinearMapR4& B)$/;"	f	class:LinearMapR4
+operator -	LinearR3.h	/^	VectorR3 operator- () const { return ( VectorR3(-x, -y, -z) ); }$/;"	f	class:VectorR3
+operator -	LinearR3.h	/^inline AffineMapR3 operator- (const AffineMapR3& A, const AffineMapR3& B)$/;"	f
+operator -	LinearR3.h	/^inline AffineMapR3 operator- (const AffineMapR3& A, const LinearMapR3& B)$/;"	f
+operator -	LinearR3.h	/^inline AffineMapR3 operator- (const LinearMapR3& B, const AffineMapR3& A)$/;"	f
+operator -	LinearR3.h	/^inline LinearMapR3 operator- (const LinearMapR3& A) $/;"	f
+operator -	LinearR3.h	/^inline LinearMapR3 operator- (const LinearMapR3& A, const LinearMapR3& B)$/;"	f
+operator -	LinearR3.h	/^inline LinearMapR3 operator- (const LinearMapR3& A, const Matrix3x3& B)$/;"	f
+operator -	LinearR3.h	/^inline LinearMapR3 operator- (const Matrix3x3& A, const LinearMapR3& B)$/;"	f
+operator -	LinearR3.h	/^inline VectorR3 operator-( const VectorR3& u, const VectorR3& v ) $/;"	f
+operator -	LinearR4.h	/^	VectorR4 operator- () const { return ( VectorR4(-x, -y, -z, -w) ); }$/;"	f	class:VectorR4
+operator -	LinearR4.h	/^inline LinearMapR4 operator- (const LinearMapR4& A)$/;"	f
+operator -	LinearR4.h	/^inline LinearMapR4 operator- (const LinearMapR4& A, const LinearMapR4& B)$/;"	f
+operator -	LinearR4.h	/^inline VectorR4 operator-( const VectorR4& u, const VectorR4& v ) $/;"	f
+operator -=	LinearR3.h	/^	VectorR3& operator-= ( const VectorR3& v ) $/;"	f	class:VectorR3
+operator -=	LinearR3.h	/^inline AffineMapR3& AffineMapR3::operator-= (const Matrix3x4& B)$/;"	f	class:AffineMapR3
+operator -=	LinearR3.h	/^inline LinearMapR3& LinearMapR3::operator-= (const Matrix3x3& B)$/;"	f	class:LinearMapR3
+operator -=	LinearR4.h	/^	VectorR4& operator-= ( const VectorR4& v ) $/;"	f	class:VectorR4
+operator -=	LinearR4.h	/^inline LinearMapR4& LinearMapR4::operator-= (const LinearMapR4& B)$/;"	f	class:LinearMapR4
+operator /	LinearR3.h	/^inline AffineMapR3 operator\/ (const AffineMapR3& A, double b) $/;"	f
+operator /	LinearR3.h	/^inline LinearMapR3 operator\/ ( const LinearMapR3& A, double b)$/;"	f
+operator /	LinearR3.h	/^inline VectorR3 operator\/( const VectorR3& u, double m) $/;"	f
+operator /	LinearR4.h	/^inline LinearMapR4 operator\/ ( const LinearMapR4& A, double b)$/;"	f
+operator /	LinearR4.h	/^inline VectorR4 operator\/( const VectorR4& u, double m) $/;"	f
+operator /=	LinearR3.h	/^	VectorR3& operator\/= ( double m ) $/;"	f	class:VectorR3
+operator /=	LinearR3.h	/^inline AffineMapR3& AffineMapR3::operator\/= (double b)$/;"	f	class:AffineMapR3
+operator /=	LinearR3.h	/^inline LinearMapR3& LinearMapR3::operator\/= ( double b)$/;"	f	class:LinearMapR3
+operator /=	LinearR4.h	/^	VectorR4& operator\/= ( double m ) $/;"	f	class:VectorR4
+operator /=	LinearR4.h	/^inline LinearMapR4& LinearMapR4::operator\/= ( double b)$/;"	f	class:LinearMapR4
+operator <<	LinearR3.cpp	/^ostream& operator<< ( ostream& os, const Matrix3x3& A )$/;"	f
+operator <<	LinearR3.cpp	/^ostream& operator<< ( ostream& os, const Matrix3x4& A )$/;"	f
+operator <<	LinearR3.cpp	/^ostream& operator<< ( ostream& os, const VectorR3& u )$/;"	f
+operator <<	LinearR4.cpp	/^ostream& operator<< ( ostream& os, const VectorR4& u )$/;"	f
+operator =	LinearR3.h	/^	VectorR3& operator= ( const VectorR3& v ) $/;"	f	class:VectorR3
+operator ==	LinearR3.h	/^	inline bool operator==(const VectorR3& u) const { return (x==u.x && y==u.y && z==u.z); }$/;"	f	class:VectorR3
+operator ==	LinearR4.h	/^inline bool operator==( const VectorR4& u, const VectorR4& v ) $/;"	f
+operator []	LinearR3.h	/^inline double VectorR3::operator[]( int i ) const$/;"	f	class:VectorR3
+operator ^	LinearR3.h	/^inline double operator^ ( const VectorR3& u, const VectorR3& v ) \/\/ Dot Product$/;"	f
+operator ^	LinearR4.h	/^inline double operator^ ( const VectorR4& u, const VectorR4& v ) \/\/ Dot Product$/;"	f
+posLoc	GlGeomSphere.h	/^    unsigned int posLoc;            \/\/ location of vertex position x,y,z data in the shader program$/;"	m	class:GlGeomSphere
+setup_callbacks	GlslWaves.cpp	/^void setup_callbacks(GLFWwindow* window) {$/;"	f
+setup_shaders	GlslWaves.cpp	/^bool setup_shaders() {$/;"	f
+shaderCodeArray	GlShaderMgr.h	/^        std::string shaderCodeArray;$/;"	m	struct:GlShaderMgr::__anon1
+shaderCodeName	GlShaderMgr.h	/^        std::string shaderCodeName;$/;"	m	struct:GlShaderMgr::__anon1
+shaderOpenGLhandle	GlShaderMgr.h	/^        unsigned int shaderOpenGLhandle;$/;"	m	struct:GlShaderMgr::__anon1
+shaderType	GlShaderMgr.h	/^        ShaderType shaderType;$/;"	m	struct:GlShaderMgr::__anon1
+shaderTypeName	GlShaderMgr.cpp	/^std::vector<std::string> GlShaderMgr::shaderTypeName = {$/;"	m	class:GlShaderMgr	file:
+shaderTypeName	GlShaderMgr.h	/^    static std::vector<std::string> shaderTypeName;$/;"	m	class:GlShaderMgr
+shdrInfo	GlShaderMgr.cpp	/^std::vector<GlShaderMgr::ShaderInfo> GlShaderMgr::shdrInfo;$/;"	m	class:GlShaderMgr	file:
+shdrInfo	GlShaderMgr.h	/^    static std::vector<ShaderInfo> shdrInfo;$/;"	m	class:GlShaderMgr
+shdrPrograms	GlShaderMgr.cpp	/^std::vector<unsigned int> GlShaderMgr::shdrPrograms;$/;"	m	class:GlShaderMgr	file:
+shdrPrograms	GlShaderMgr.h	/^    static std::vector<unsigned int> shdrPrograms;$/;"	m	class:GlShaderMgr
+texcoordsLoc	GlGeomSphere.h	/^    unsigned int texcoordsLoc;      \/\/ location of s,t texture coordinates in the shader program.$/;"	m	class:GlGeomSphere
+theEBO	GlGeomSphere.h	/^    unsigned int theEBO = 0;        \/\/ Element Buffer Object;$/;"	m	class:GlGeomSphere
+theProjectionMatrix	GlslWaves.cpp	/^LinearMapR4 theProjectionMatrix;		\/\/  The Projection matrix: Controls the "camera\/view" transformation$/;"	v
+theVAO	GlGeomSphere.h	/^    unsigned int theVAO = 0;        \/\/ Vertex Array Object$/;"	m	class:GlGeomSphere
+theVBO	GlGeomSphere.h	/^    unsigned int theVBO = 0;        \/\/ Vertex Buffer Object$/;"	m	class:GlGeomSphere
+vertPos_loc	BufferInterface.cpp	/^unsigned int vertPos_loc = 0;$/;"	v
+vertex_shader	GlShaderMgr.h	/^    enum ShaderType { vertex_shader, fragment_shader, geometryshader, code_block };$/;"	e	enum:GlShaderMgr::ShaderType
+viewAzimuth	GlslWaves.cpp	/^double viewAzimuth = 0.25;	\/\/ Angle of view up\/down (in radians)$/;"	v
+viewDirection	GlslWaves.cpp	/^double viewDirection = 0.0; \/\/ Rotation of view around y-axis (in radians)$/;"	v
+viewMatrix	GlslWaves.cpp	/^LinearMapR4 viewMatrix;		\/\/ The current view matrix, based on viewAzimuth and viewDirection.$/;"	v
+w	LinearR3.h	/^	double x, y, z, w;		\/\/ The x & y & z & w coordinates.$/;"	m	class:VectorHgR3
+w	LinearR4.h	/^	double x, y, z, w;		\/\/ The x & y & z & w coordinates.$/;"	m	class:VectorR4
+waveModelviewMatLocation	GlslWaves.cpp	/^int waveModelviewMatLocation;$/;"	v
+waveProgram	GlslWaves.cpp	/^int waveProgram;$/;"	v
+waveProjMatLocation	GlslWaves.cpp	/^int waveProjMatLocation;$/;"	v
+waveTimeLocation	GlslWaves.cpp	/^int waveTimeLocation;$/;"	v
+waveViewerLocation	GlslWaves.cpp	/^int waveViewerLocation;$/;"	v
+window_size_callback	GlslWaves.cpp	/^void window_size_callback(GLFWwindow* window, int width, int height) {$/;"	f
+x	LinearR3.h	/^	double x, y, z, w;		\/\/ The x & y & z & w coordinates.$/;"	m	class:VectorHgR3
+x	LinearR3.h	/^	double x, y, z;		\/\/ The x & y & z coordinates.$/;"	m	class:VectorR3
+x	LinearR4.h	/^	double x, y, z, w;		\/\/ The x & y & z & w coordinates.$/;"	m	class:VectorR4
+y	LinearR3.h	/^	double x, y, z, w;		\/\/ The x & y & z & w coordinates.$/;"	m	class:VectorHgR3
+y	LinearR3.h	/^	double x, y, z;		\/\/ The x & y & z coordinates.$/;"	m	class:VectorR3
+y	LinearR4.h	/^	double x, y, z, w;		\/\/ The x & y & z & w coordinates.$/;"	m	class:VectorR4
+z	LinearR3.h	/^	double x, y, z, w;		\/\/ The x & y & z & w coordinates.$/;"	m	class:VectorHgR3
+z	LinearR3.h	/^	double x, y, z;		\/\/ The x & y & z coordinates.$/;"	m	class:VectorR3
+z	LinearR4.h	/^	double x, y, z, w;		\/\/ The x & y & z & w coordinates.$/;"	m	class:VectorR4
+zNear	GlslWaves.cpp	/^const double zNear = 15.0;              \/\/ Make this value larger or smaller to affect field of view.$/;"	v
+~GlGeomSphere	GlGeomSphere.h	/^inline GlGeomSphere::~GlGeomSphere() $/;"	f	class:GlGeomSphere
