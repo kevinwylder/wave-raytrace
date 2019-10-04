@@ -63,18 +63,23 @@ float animateIncrement = 1;
 float currentTime = 0;
 
 // The next variable controls the resoluton of the meshes for the water plane.
-int meshRes=4;
+int meshRes=40;
 
+int shadowProgram;
+int shadowTimeLocation;
+GLuint shadowTexture;
 
 int waveProgram;
 int waveProjMatLocation;
 int waveModelviewMatLocation;
 int waveViewerLocation;
 int waveTimeLocation;
+int waveShadowLocation;
 
 int imageProgram;
 int imageProjMatLocation;
 int imageModelviewMatLocation;
+int imageShadowLocation;
 
 
 // A ModelView matrix controls the placement of a particular object in 3-space.
@@ -120,7 +125,8 @@ void mySetViewMatrix() {
 // The EduPhong shaders are already setup.
 // *************************************
 void myRenderScene() {
-   
+	currentTime -= (1.0f / 60.0f) * animateIncrement;
+
     // Clear the rendering window
     static const float black[] = { 0.0f, 0.0f, 0.0f, 0.0f };
     const float clearDepth = 1.0f;
@@ -128,15 +134,26 @@ void myRenderScene() {
     glClearBufferfv(GL_DEPTH, 0, &clearDepth);  // Must pass in a *pointer* to the depth
 
     mySetViewMatrix();
+	glUseProgram(shadowProgram);
+	glUniform1f(shadowTimeLocation, currentTime);
+	
+	MyRenderShadow();
 
     glUseProgram(waveProgram);
-    currentTime -= (1.0f / 60.0f) * animateIncrement;
+	glUniform1i(waveShadowLocation, 0);
+	glActiveTexture(GL_TEXTURE0);
+	glBindTexture(GL_TEXTURE_2D, shadowTexture);
     glUniform1f(waveTimeLocation, currentTime);
     MyRenderWave();
 
     check_for_opengl_errors();   // Really a great idea to check for errors -- esp. good for debugging!
 
     glUseProgram(imageProgram);
+	glUniform1i(imageShadowLocation, 0);
+	glActiveTexture(GL_TEXTURE0);
+	glBindTexture(GL_TEXTURE_2D, shadowTexture);
+	glBindFramebuffer(GL_FRAMEBUFFER, 0);
+
     MyRenderImage();
     MyRenderLight();
 
@@ -150,7 +167,7 @@ bool setup_shaders() {
     }
 
     const char * fshaders[2] = {"fragmentShader_Waves", "complex_function"};
-
+    
     // program for the wave
     unsigned int vertexShader = GlShaderMgr::CompileShader("vertexShader_Waves");
     unsigned int fragmentShader = GlShaderMgr::CompileShader(2, fshaders);
@@ -169,6 +186,15 @@ bool setup_shaders() {
     imageProgram = GlShaderMgr::LinkShaderProgram(2, params);
     check_for_opengl_errors();
 
+	// program for the shadow
+	vertexShader = GlShaderMgr::CompileShader("vertexShader_shadow");
+	fshaders[0] = "fragmentShader_shadow";
+	fragmentShader = GlShaderMgr::CompileShader(1, fshaders);
+	params[0] = vertexShader;
+	params[1] = fragmentShader;
+	shadowProgram = GlShaderMgr::LinkShaderProgram(2, params);
+
+
     GlShaderMgr::FinalizeCompileAndLink();
     check_for_opengl_errors();
 
@@ -176,8 +202,11 @@ bool setup_shaders() {
     waveModelviewMatLocation = glGetUniformLocation(waveProgram, "modelviewMatrix");
     waveProjMatLocation = glGetUniformLocation(waveProgram, "projectionMatrix");
     waveViewerLocation = glGetUniformLocation(waveProgram, "viewer");
+	waveShadowLocation = glGetUniformLocation(waveProgram, "shadow");
     imageModelviewMatLocation = glGetUniformLocation(imageProgram, "modelviewMatrix");
     imageProjMatLocation = glGetUniformLocation(imageProgram, "projectionMatrix");
+	imageShadowLocation = glGetUniformLocation(imageProgram, "shadow");
+	shadowTimeLocation = glGetUniformLocation(shadowProgram, "time");
     return true;
 }
 
@@ -209,6 +238,25 @@ void my_setup_OpenGL() {
     check_for_opengl_errors();   // Really a great idea to check for errors -- esp. good for debugging!
 }
 
+double cx, cy = -500;
+void cursor_pos_callback (GLFWwindow *window, double x, double y) {
+    if (cy == -500) {
+        cx = x;
+        cy = y;
+        return;
+    }
+
+    double dD = (cx - x) / 100.0;
+    double dA = (y - cy) / 100.0;
+
+    viewDirection += dD;
+    viewAzimuth += dA;
+
+    mySetViewMatrix();
+
+    cx = x;
+    cy = y;
+}
 
 
 void setup_callbacks(GLFWwindow* window) {
@@ -219,7 +267,7 @@ void setup_callbacks(GLFWwindow* window) {
     glfwSetKeyCallback(window, key_callback);
 
     // Set callbacks for mouse movement (cursor position) and mouse botton up/down events.
-    // glfwSetCursorPosCallback(window, cursor_pos_callback);
+    glfwSetCursorPosCallback(window, cursor_pos_callback);
     // glfwSetMouseButtonCallback(window, mouse_button_callback);
 }
 
@@ -367,6 +415,7 @@ int main() {
 
     // Loop while program is not terminated.
 	while (!glfwWindowShouldClose(window)) {
+	
 	
 		myRenderScene();				// Render into the current buffer
 		glfwSwapBuffers(window);		// Displays what was just rendered (using double buffering).

@@ -72,9 +72,52 @@ vec3 color_func(in vec2 complex) {
 			color = vec3(1, 0, x);
 		}
 	}
-    // find the disturbance due to light
-    vec3 light = vec3(-complex.x, 
 	return color;
+}
+#endglsl
+
+/////////////////////////
+// Code for the shadow //
+/////////////////////////
+#beginglsl VertexShader vertexShader_shadow
+#version 330 core
+layout (location = 0) in vec3 wave;
+uniform float time;
+out float r;
+
+void main() {
+    r = wave.y;
+	// find the position and gradient of the wave
+	float d1 = sqrt((wave.z + 6) * (wave.z + 6) + (wave.x - 6) * (wave.x - 6));
+	float d2 = sqrt((wave.z - 6) * (wave.z - 6) + (wave.x - 6) * (wave.x - 6));
+	float y = .15 * sin(2 * d1 + 2 * time) + .07 * sin(3 * d2 + 3 * time);
+	float c1 = .15 * cos(2 * d1 + 2 * time);
+    float c2 = .07 * cos(3 * d2 + 3 * time);
+    float nx = 3 * (wave.x - 6) * c2 / d2 + 2 * (wave.x - 6) * c1 / d1;
+    float nz = 3 * (wave.z - 6) * c2 / d2 + 2 * (wave.z + 6) * c1 / d1;
+
+    vec3 norm = normalize(vec3(-nx, 1, -nz));
+	vec3 light = normalize(vec3(-wave.x, 5.5 - y, -wave.z));
+
+	// compute the output ray from refraction
+	vec3 vlat = (dot(light, norm) * norm - light) / 1.13;
+	vec3 rayOut = vlat - sqrt(1 - dot(vlat, vlat)) * norm;
+
+	// set the position
+	vec3 pos = vec3(wave.x + rayOut.x * (y + 3) / rayOut.y, wave.z + rayOut.z * (y + 3) / rayOut.y, 0);
+	gl_Position = vec4(pos, 5.0);
+}
+#endglsl
+
+#beginglsl FragmentShader fragmentShader_shadow
+#version 330 core
+out vec4 fragColor;
+in float r;
+void main() {
+	float ds = (gl_PointCoord.s - .5) * 25 / r;
+	float dt = (gl_PointCoord.t - .5) * 25 / r;
+	float intensity = exp(-(ds * ds + dt * dt)) / 50.0;
+	fragColor = vec4(intensity, intensity, intensity, 1);
 }
 #endglsl
 
@@ -109,6 +152,7 @@ void main()
 uniform mat4 projectionMatrix;		// The projection matrix
 uniform mat4 modelviewMatrix;		// The modelview matrix
 uniform vec4 viewer;
+uniform sampler2D shadow;
 uniform float time;
 
 vec3 color_func(in vec2 complex);
@@ -121,7 +165,7 @@ void main() {
     vec4 refractiveColor;
 
     // get light relative to the surface
-    vec3 light = normalize(vec3(0, 1.5, 0) - mvPos);
+    vec3 light = normalize(vec3(0, 5.5, 0) - mvPos);
 
     // find the normal
 	float d1 = sqrt((mvPos.z + 6) * (mvPos.z + 6) + (mvPos.x - 6) * (mvPos.x - 6));
@@ -137,7 +181,7 @@ void main() {
 
     if (gl_FrontFacing) { // render into the water
         // diffuse lighting
-        diffuseColor = dot(light, norm) * vec4(.5, .5, 1, 0);
+        diffuseColor = dot(light, norm) * vec4(.2, .2, .5, 0);
     
         // specular lighting
         vec3 reflection = light - 2 * dot(light, norm) * norm;
@@ -155,7 +199,8 @@ void main() {
         } else {
             rayOut = rayOut / rayOut.y; // now y = 1, x and z are d/dy because light is linear
             vec2 collision = vec2(mvPos.x + rayOut.x * (mvPos.y-3), mvPos.z + rayOut.z * (mvPos.y-3));
-            refractiveColor = vec4(color_func(collision), 0);
+			float shade = texture(shadow, (collision + 5.0) / 10.0).x / 2.0 + .5;
+            refractiveColor = vec4(shade * color_func(collision), 0);
         }
 
     } else { // render towards the light
@@ -168,7 +213,7 @@ void main() {
         } else {
             reflection = reflection / reflection.y; // now y = 1, x and z are d/dt
             vec2 collision = vec2(mvPos.x + reflection.x * (mvPos.y-3), mvPos.z + reflection.z * (mvPos.y-3));
-            diffuseColor = .2 * vec4(color_func(collision), 0);
+            diffuseColor = .5 * vec4(color_func(collision), 0);
         }
 
         // compute the refraction of the light
@@ -181,7 +226,7 @@ void main() {
                 specularColor = vec4(0,0,0.2,0);
             } else {
                 rayOut = rayOut / rayOut.y;
-                vec2 collision = vec2(mvPos.x + (1.5 - mvPos.y) * rayOut.x, mvPos.z + (1.5 - mvPos.y) * rayOut.z);
+                vec2 collision = vec2(mvPos.x + (5.5 - mvPos.y) * rayOut.x, mvPos.z + (5.5 - mvPos.y) * rayOut.z);
                 if (collision.x * collision.x + collision.y * collision.y < .04) {
                     specularColor = vec4(1, 1, 1, 0);
                 } else {
@@ -229,10 +274,18 @@ void main()
 #version 330 core
 in vec2 complex;
 out vec4 fragmentColor;
+uniform sampler2D shadow;
+
 vec3 color_func(in vec2 complex);
 
-void main() {
-	fragmentColor = vec4(color_func(complex), 1);
+void main() {;
+	float shade = texture(shadow, (complex + 5) / 10.0).x / 2.0 + .5;
+	vec3 color = color_func(complex);
+	if (!gl_FrontFacing) {
+		fragmentColor = vec4(shade * color, 1);
+	} else {
+		fragmentColor = vec4(color, 1);
+	}
 }
 #endglsl
 

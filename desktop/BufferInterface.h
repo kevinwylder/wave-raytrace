@@ -14,6 +14,7 @@
 //
 void MySetupSurfaces();             // Called once, before rendering begins.
 void RemeshFloor();                 // Remeshing the plane
+void MyRenderShadow();
 void MyRenderWave();
 void MyRenderImage();
 void MyRenderLight();
